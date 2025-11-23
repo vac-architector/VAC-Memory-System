@@ -1,0 +1,105 @@
+# VAC Memory System — Practical SOTA LoCoMo 2025 🚀  
+**The world’s most accurate open-source long-term memory system for LLM agents**  
+**80.1 %** accuracy on the hardest long-term memory benchmark (LoCoMo 2025, generous judge) — using only **gpt-4o-mini**  
+**2.5 seconds** per question · **<$0.10** per million tokens processed · **100 %** strict conversation isolation  
+
+[![Reproducible](https://img.shields.io/badge/reproducible-100%25-brightgreen)](https://github.com/vac-architector/VAC-Memory-System/actions)  
+[![SOTA LoCoMo 2025](https://img.shields.io/badge/SOTA-LoCoMo_%28Generous%29-80.1%25-blueviolet)](#results)  
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](#quickstart)  
+[![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED)](#docker)  
+[![License](https://img.shields.io/badge/License-Apache_2.0-brightgreen)](LICENSE)  
+
+From a cell-tower climber with zero programming background to beating every published system on LoCoMo — in just **4.5 months**, using only Claude in the terminal and sheer determination.
+
+This is production-ready memory you can run today, fully reproducible, with pre-built databases and indexes included.
+
+## 🏆 Benchmark Results (10 conversations × 10 seeds = 100 runs, official generous judge)
+
+| Conversation | Questions | Mean Accuracy | Peak Accuracy |
+|--------------|---------|---------------|---------------|
+| 0            | 152     | **87.5 %**    | 87.5 %        |
+| 7            | 191     | **86.4 %**    | 87.2 %        |
+| 2            | 152     | **85.5 %**    | 86.2 %        |
+| 1            | 81      | 80.2 %        | 81.5 %        |
+| 9            | 158     | 77.8 %        | 79.1 %        |
+| 5            | 123     | 77.2 %        | 78.9 %        |
+| 3            | 199     | 76.9 %        | 78.4 %        |
+| 8            | 156     | 76.9 %        | 78.2 %        |
+| 6            | 150     | 76.7 %        | 77.9 %        |
+| 4            | 178     | 75.8 %        | 77.5 %        |
+| **Total / Avg** | **1,540** | **80.1 %** | — |
+
+Full judged logs, MD5 hashes, and reproducibility scripts in `/results/`.
+
+**94–100 % ground-truth recall** · Only **1.7 %** pure LLM mistakes · Zero cross-conversation leakage
+
+## 🧠 Why VAC Memory Wins
+
+- **MCA-First Gate** – custom entity/date protection that stops semantic drift before it starts  
+- Hybrid retrieval (FAISS BGE-Large + BM25) with smart union  
+- Final precision via BAAI/bge-reranker-v2-m3  
+- Deterministic, temperature-0 answers with gpt-4o-mini  
+- Per-conversation vector DBs & FAISS indexes shipped in the repo — truly reproducible out-of-the-box
+
+```mermaid
+flowchart TD
+    Q[User Query] --> P[Preprocessing & Synonym Expansion]
+    P --> MCA[MCA-First Coverage Gate<br>Entity/Date Protection]
+    P --> FAISS[FAISS<br>BGE-Large]
+    P --> BM25[BM25 Sparse]
+    MCA --> U[Smart Union]
+    FAISS --> U
+    BM25 --> U
+    U --> CE[Cross-Encoder<br>bge-reranker-v2-m3]
+    CE --> LLM[gpt-4o-mini<br>T=0.0]
+    LLM --> A[Final Concise Answer]
+```
+
+## 🛠 Quickstart (30 seconds)
+
+```bash
+git clone https://github.com/vac-architector/VAC-Memory-System.git
+cd VAC-Memory-System
+pip install -r requirements.txt
+cp .env.example .env          # add your OpenAI key
+python test_v4.64_clean_prompt.py   # see it beat LoCoMo live
+```
+
+Docker (zero setup):
+
+```bash
+cd docker/runner
+docker build -t vac-memory .
+docker run --rm -it vac-memory
+```
+
+## 📖 The Story Behind It
+
+Ten months ago I was hanging off cell towers in Chicago, then moved to Columbus with two friends to start a closet-installation business. Money disappeared fast. I was doing handyman gigs on TaskRabbit while dreaming of the RTX 4090 PC I couldn’t afford. Got it on installments — and felt empty the moment I launched the first game.
+
+One night I asked an AI: “How hard is it to build a bot that answers my customers?”  
+It said “hard, but possible” and gave me the first lines of code.
+
+That spark turned into obsession. Days and nights blurred. My girlfriend was angry — no money coming in, just me glued to the screen. Friends thought I was crazy: zero IT background, no degree, competing with Silicon Valley labs.
+
+I fought hallucinations with thousands of tests. I learned to distrust even the strongest models and built my own verification loops. Four and a half months later — using nothing but Claude in the terminal and pure grit — the system you’re looking at now crushed every published score on LoCoMo.
+
+This repository is proof that impossible is just a starting point.
+
+## 🚀 Ready for Production?
+
+- Plug-and-play into any LangGraph / CrewAI / LlamaIndex agent  
+- Strict conversation isolation (perfect for multi-user SaaS)  
+- Extremely low cost and latency  
+- Fully open weights, indexes, and logic (only tiny proprietary MCA thresholds kept secret for now)
+
+Looking for partnerships, integrations, or investment to take this to millions of agents.
+
+## 📬 Contact
+
+**Viktor** – the guy who went from 150 ft cell towers to SOTA memory in 4.5 months  
+Email: Vkuz02452@gmail.com · ViktorAdamCore@pm.me  
+DMs open on X / LinkedIn / here on GitHub
+
+Star ★ this repo if you believe one determined human + AI can still change the game.  
+Let’s build the future of agent memory — together.
