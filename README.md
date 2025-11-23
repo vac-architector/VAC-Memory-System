@@ -41,37 +41,66 @@ Full judged logs, MD5 hashes, and reproducibility scripts in `/results/`.
 - Deterministic, temperature-0 answers with gpt-4o-mini  
 - Per-conversation vector DBs & FAISS indexes shipped in the repo — truly reproducible out-of-the-box
 
-```mermaid
-flowchart TD
-    Q[User Query] --> P[Preprocessing & Synonym Expansion]
-    P --> MCA[MCA-First Coverage Gate<br>Entity/Date Protection]
-    P --> FAISS[FAISS<br>BGE-Large]
-    P --> BM25[BM25 Sparse]
-    MCA --> U[Smart Union]
-    FAISS --> U
-    BM25 --> U
-    U --> CE[Cross-Encoder<br>bge-reranker-v2-m3]
-    CE --> LLM[gpt-4o-mini<br>T=0.0]
-    LLM --> A[Final Concise Answer]
+## Contents
+- `Core/` — protected pipeline modules (.so) + judge helper + sanitize script.
+- `data/` — per-conv SQLite DBs, FAISS, IDMAP, `locomo10.json`, `memory.db`.
+- `models/` — `bge-large-en-v1.5` (embeddings).
+- `baseline_100 result LoCoMo/` — 100 judged runs (Cat1–4) + metrics (`metrics_full_100.csv`).
+- `results/` — empty; new runs are written here.
+- `run_test.sh`, `run_test.bat` — run all 10 conversations once.
+
+## Requirements
+- GPU with CUDA.
+- Python 3.10+.
+- OpenAI API key in `OPENAI_API_KEY` (answers + generous judge).
+- Ollama running locally with `qwen2.5:14b`:
+  - Install Ollama, then `ollama pull qwen2.5:14b`.
+  - Ensure `OLLAMA_BASE_URL=http://localhost:11434` (default).
 ```
 
 ## 🛠 Quickstart (30 seconds)
 
+### Linux
 ```bash
-git clone https://github.com/vac-architector/VAC-Memory-System.git
-cd VAC-Memory-System
-pip install -r requirements.txt
-cp .env.example .env          # add your OpenAI key
-python test_v4.64_clean_prompt.py   # see it beat LoCoMo live
+cd /path/to/Github
+export OPENAI_API_KEY=sk-...
+export OLLAMA_BASE_URL=http://localhost:11434
+./run_test.sh
 ```
 
-Docker (zero setup):
-
-```bash
-cd docker/runner
-docker build -t vac-memory .
-docker run --rm -it vac-memory
+### Windows
 ```
+cd D:\path\to\Github
+set OPENAI_API_KEY=sk-...
+set OLLAMA_BASE_URL=http://localhost:11434
+run_test.bat
+```
+
+Outputs: `results/vac_v1_conv*.json` (+ judged if you run the judge manually).
+
+## Optional: Judge a result
+```bash
+cd /path/to/Github
+export OPENAI_API_KEY=sk-...
+PYTHONPATH=Core \
+python3 Core/gpt_official_generous_judge_from_mem0.py results/vac_v1_conv0_seed2001_*.json
+python3 Core/sanitize_summary.py results/vac_v1_conv0_seed2001_*_generous_judged.json
+```
+(You can also copy `Core/eval_v4.26_official_generous_judge.py` into `code/` if you prefer.)
+
+## Pipeline (high level)
+1. Query Classification  
+2. LLM Synonym Expansion (qwen2.5:14b)  
+3. [TARGET] MCA-first filter  
+4. [TARGET] FAISS top-k (semantic, BGE-large 1024D)  
+5. [TARGET] BM25 top-k (sparse)  
+6. Union(MCA, FAISS, BM25) -> ~112 docs  
+7. [FIRE] Cross-Encoder DIRECT reranking (ALL ~112 docs -> top-15)  
+8. gpt-4o-mini answer (T=0.0, max_tokens=150)
+
+## Notes
+- Directory with spaces: `baseline_100 result LoCoMo/` (quote it if scripting).
+- Results dir is empty by default; create/keep `results/` for new runs. Baseline 100 runs stay in their folder.
 
 ## 📖 The Story Behind It
 
