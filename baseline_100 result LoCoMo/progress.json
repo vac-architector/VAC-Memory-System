@@ -1,0 +1,171 @@
+{
+  "start_time": "2025-11-20T11:18:05.432469",
+  "status": "completed",
+  "completed": {
+    "conv0": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv1": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv3": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv4": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv5": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv8": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "conv9": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "failed": [
+    {
+      "conv": 4,
+      "run": 4,
+      "reason": "judge_failed",
+      "timestamp": "$(date -Iseconds)"
+    },
+    {
+      "conv": 5,
+      "run": 2,
+      "reason": "judge_failed",
+      "timestamp": "$(date -Iseconds)"
+    },
+    {
+      "conv": 7,
+      "run": 1,
+      "reason": "judge_failed",
+      "timestamp": "$(date -Iseconds)"
+    },
+    {
+      "conv": 7,
+      "run": 1,
+      "reason": "judge_failed",
+      "timestamp": "$(date -Iseconds)"
+    }
+  ],
+  "total_completed": 100,
+  "total_runs": 100,
+  "_note": "Conv 0-6 complete. Restarting from Conv 7 Run 1 with key #5",
+  "end_time": "$(date -Iseconds)",
+  "summary": {
+    "pipeline": "VAC Memory System v1",
+    "architecture": [
+      "1. Query Classification",
+      "2. LLM Synonym Expansion (qwen2.5:14b)",
+      "3. [TARGET] MCA-first filter",
+      "4. [TARGET] FAISS top-k (semantic, BGE-large 1024D)",
+      "5. [TARGET] BM25 top-k (sparse)",
+      "6. Union(MCA, FAISS, BM25) -> ~112 docs",
+      "7. [FIRE] Cross-Encoder DIRECT reranking (ALL ~112 docs -> top-15)",
+      "8. gpt-4o-mini answer (T=0.0, max_tokens=150)   MEM0 OFFICIAL!"
+    ],
+    "embedding_model": "bge-large-en-v1.5",
+    "embedding_dim": 1024
+  }
+}

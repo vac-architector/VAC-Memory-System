@@ -1,0 +1,1434 @@
+{
+  "source_file": "/mnt/d/LoCoMo_SOTA_v4.64/results/baseline_100runs_20251120/v4.64_union_direct_ce_20251120_161446.json",
+  "judge_model": "gpt-4o-mini (GENEROUS - Mem0 official)",
+  "judge_prompt": "ACCURACY_PROMPT (generous grading)",
+  "filter": "Cat1-4 only (no adversarial Cat5)",
+  "llm_judge_accuracy": 0.8421052631578947,
+  "llm_judge_correct": 128,
+  "llm_judge_total": 152,
+  "category_breakdown": {
+    "2": {
+      "correct": 20,
+      "total": 27
+    },
+    "1": {
+      "correct": 28,
+      "total": 31
+    },
+    "3": {
+      "correct": 5,
+      "total": 8
+    },
+    "4": {
+      "correct": 75,
+      "total": 86
+    }
+  },
+  "category_breakdown_named": {
+    "2": {
+      "correct": 20,
+      "total": 27,
+      "label": "Temporal"
+    },
+    "1": {
+      "correct": 28,
+      "total": 31,
+      "label": "Single-hop (Factual)"
+    },
+    "3": {
+      "correct": 5,
+      "total": 8,
+      "label": "Multi-hop"
+    },
+    "4": {
+      "correct": 75,
+      "total": 86,
+      "label": "Commonsense"
+    }
+  },
+  "judge_results": [
+    {
+      "question": "Who did Maria have dinner with on May 3, 2023?",
+      "ground_truth": "her mother",
+      "generated_answer": "Maria had dinner with some friends from the gym on May 3, 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Maria donate her car?",
+      "ground_truth": "21 December 2022",
+      "generated_answer": "Maria donated her car on 21 December 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What martial arts has John done?",
+      "ground_truth": "Kickboxing, Taekwondo",
+      "generated_answer": "John has done kickboxing and taekwondo.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of volunteering have John and Maria both done?",
+      "ground_truth": "Volunteering at a homeless shelter",
+      "generated_answer": "John and Maria have both volunteered at a homeless shelter. Additionally, John has volunteered as a mentor for a local school, while Maria has also volunteered at a dog shelter.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John join the online support group?",
+      "ground_truth": "The week before 1 January 2023",
+      "generated_answer": "John joined the online support group on 25 December 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria go to the beach?",
+      "ground_truth": "December 2022",
+      "generated_answer": "Maria went to the beach in December 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where has Maria made friends?",
+      "ground_truth": "homeless shelter, gym, church",
+      "generated_answer": "Maria has made friends from church, fellow volunteers, and friends from the gym.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What items des John mention having as a child?",
+      "ground_truth": "A doll, a film camera",
+      "generated_answer": "John mentioned having a film camera and a little doll as a child.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What might John's financial status be?",
+      "ground_truth": "Middle-class or wealthy",
+      "generated_answer": "John's financial status appears to be challenging; he has faced car trouble, money problems, and lost his job at a mechanical engineering company, which has made it tough for him. He is trying to stay positive and is exploring opportunities in the tech industry as a potential change.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Who gave Maria's family money when she was younger and her family was going through tough times?",
+      "ground_truth": "Her aunt",
+      "generated_answer": "Maria's family received money from her aunt when they were going through tough times.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria meet Jean?",
+      "ground_truth": "February 24, 2023",
+      "generated_answer": "Maria met Jean on 24 February 2023 while volunteering.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What people has Maria met and helped while volunteering?",
+      "ground_truth": "David, Jean, Cindy, Laura",
+      "generated_answer": "Maria has met and helped several people while volunteering, including an amazing woman named Jean on 24 February 2023, and she has also interacted with children at the shelter, bringing joy to someone who had been sad for months. Additionally, she has made friends with fellow volunteers who share her passion for helping others.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What test has John taken multiple times?",
+      "ground_truth": "The military aptitude test",
+      "generated_answer": "John has taken the military aptitude test multiple times, including a recent attempt where he mentioned failing it.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria's grandmother pass away?",
+      "ground_truth": "The week before 6 March 2023",
+      "generated_answer": "Maria's grandmother passed away on 27 February 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Would John be considered a patriotic person?",
+      "ground_truth": "Yes",
+      "generated_answer": "Yes, John would be considered a patriotic person, as he expresses a strong respect for the military, a desire to support veterans, and a commitment to serving his country and community.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What writing classes has Maria taken?",
+      "ground_truth": "Poetry, creative writing",
+      "generated_answer": "Maria has taken a creative writing class and a poetry class. She also mentioned starting aerial yoga, but that is not a writing class.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John get his degree?",
+      "ground_truth": "The week before 2 April 2023",
+      "generated_answer": "John graduated on 26 March 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What might John's degree be in?",
+      "ground_truth": "Political science, Public administration, Public affairs",
+      "generated_answer": "John's degree might be in a field related to policymaking, as he mentioned considering a career in that area due to his degree and passion for making a positive impact. Additionally, he has mechanical skills, which suggests he may have a degree in mechanical engineering.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Who did John go to yoga with?",
+      "ground_truth": "Rob",
+      "generated_answer": "John went to yoga with his colleague Rob.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What damages have happened to John's car?",
+      "ground_truth": "Broken windshield, Car broke down",
+      "generated_answer": "John's car broke down on 16 December 2022 while he was on his way to work, and he is currently trying to get it fixed, which is putting a strain on his finances.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John take a road trip to the Pacific Northwest?",
+      "ground_truth": "2022",
+      "generated_answer": "John took a road trip to the Pacific Northwest on 16 December 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What areas of the U.S. has John been to or is planning to go to?",
+      "ground_truth": "Pacific northwest, east coast",
+      "generated_answer": "John has been to the Pacific Northwest and is planning a trip to the East Coast. He has also mentioned Oregon in relation to a mountaineering trip.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John go to a convention with colleagues?",
+      "ground_truth": "March 2023",
+      "generated_answer": "John went to a convention with colleagues in March 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What desserts has Maria made?",
+      "ground_truth": "Banana split sundae, Peach cobbler",
+      "generated_answer": "Maria has made a banana split sundae and peach cobbler. Additionally, she baked items that she dropped off at a homeless shelter on 24 July 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John start boot camp with his family?",
+      "ground_truth": "April.2023",
+      "generated_answer": "John started boot camp with his family in April 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What European countries has Maria been to?",
+      "ground_truth": "Spain, England",
+      "generated_answer": "Maria has been to Spain and England.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What has Maria done to feel closer to her faith?",
+      "ground_truth": "Join a local church, buy a cross necklace",
+      "generated_answer": "Maria has joined a nearby church on 5 May 2023 to feel closer to her community and her faith. Additionally, she has been involved in charity work, which she finds fulfilling and rewarding.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John have a party with veterans?",
+      "ground_truth": "The Friday before 20 May 2023",
+      "generated_answer": "John had a party with veterans on 19 May 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What causes does John feel passionate about supporting?",
+      "ground_truth": "Veterans, schools, infrastructure",
+      "generated_answer": "John feels passionate about improving education and infrastructure in his community, supporting veterans and their rights, and helping victims of domestic abuse. He is also interested in using technology for good in the community.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What events is Maria planning for the homeless shelter funraiser?",
+      "ground_truth": "Chili cook-off, ring-toss tournament",
+      "generated_answer": "Maria is planning a ring-toss tournament and a chili cook-off for the homeless shelter fundraiser on 1 June 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What shelters does Maria volunteer at?",
+      "ground_truth": "The homeless shelter, the dog shelter",
+      "generated_answer": "Maria volunteers at a homeless shelter and has also started volunteering at a local dog shelter.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John get his dog Max?",
+      "ground_truth": "In 2013",
+      "generated_answer": "The exact date when John got his dog Max is not mentioned in the provided context. However, it is indicated that Max was an important part of John's family for 10 years before he passed away, which suggests that John likely got Max around 2012.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What outdoor activities has John done with his colleagues?",
+      "ground_truth": "Hiking, mountaineering",
+      "generated_answer": "John has done outdoor activities such as hiking, having picnics in the park, and going on a mountaineering trip on 5 June 2023 with his colleagues.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What types of yoga has Maria practiced?",
+      "ground_truth": "Aerial, kundalini",
+      "generated_answer": "Maria has practiced aerial yoga and kundalini yoga.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria join a gym?",
+      "ground_truth": "The week before 16 June 2023",
+      "generated_answer": "Maria joined a gym on 9 June 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What states has Maria vacationed at?",
+      "ground_truth": "Oregon, Florida",
+      "generated_answer": "Maria has vacationed in Florida, Spain, Oregon, and England.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What music events has John attended?",
+      "ground_truth": "Live music event, violin concert",
+      "generated_answer": "John attended a violin concert on 27 February 2023. He also participated in a community event to raise money for a good cause on 5 August 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What events for veterans has John participated in?",
+      "ground_truth": "Petition, march, party, visiting veterans hospital, 5K charity run",
+      "generated_answer": "John has participated in a marching event for veterans' rights, set up a 5K charity run to help veterans and their families, and organized a small party inviting veterans to share their stories.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria get in a car accident?",
+      "ground_truth": "July 2, 2023",
+      "generated_answer": "Maria got in a car accident when a car ran a red light and hit them, but the exact date of the accident is not specified in the provided context.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Around which US holiday did Maria get into a car accident?",
+      "ground_truth": "Independence Day",
+      "generated_answer": "Maria got into a car accident around the US holiday of Independence Day, which is celebrated on 4 July, as she mentioned an incident on 2 July 2023.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are the names of John's children?",
+      "ground_truth": "Kyle, Sara",
+      "generated_answer": "John's children are named Kyle and Sara.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Does John live close to a beach or the mountains?",
+      "ground_truth": "beach",
+      "generated_answer": "John lives close to the beach, as he has mentioned taking beach pictures and shared a family picture at the beach. There is no specific mention of him living near the mountains, although he has gone on a mountaineering trip.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What area was hit by a flood?",
+      "ground_truth": "West County",
+      "generated_answer": "The area hit by a flood was John's old area, which experienced a nasty flood on 30 June 2023.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When was John's old area hit with a flood?",
+      "ground_truth": "The week before 7 July 2023",
+      "generated_answer": "John's old area was hit by a flood on 30 June 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activities has Maria done with her church friends?",
+      "ground_truth": "Hiking, picnic, volunteer work",
+      "generated_answer": "Maria has had a picnic, gone hiking, participated in community work, and went camping with her church friends.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Would John be open to moving to another country?",
+      "ground_truth": "No, he has goals specifically in the U.S. like joining the military and running for office.",
+      "generated_answer": "Yes, John seems open to moving to another country as he has been exploring options and discussing potential solutions with local leaders and organizations.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Maria go hiking with her church friends?",
+      "ground_truth": "The weekend before 22 July 2023",
+      "generated_answer": "Maria went hiking with her church friends on 10 December 2022, which was the last weekend before the dialog date of 17 December 2022.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What exercises has John done?",
+      "ground_truth": "Weight training, Circuit training, Kickboxing, yoga",
+      "generated_answer": "John has done weight training, yoga, kickboxing, circuit training, and taekwondo. He has also expressed interest in rock climbing.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John have his first firefighter call-out?",
+      "ground_truth": "The sunday before 3` July 2023",
+      "generated_answer": "John had his first firefighter call-out on 30 July 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What food item did Maria drop off at the homeless shelter?",
+      "ground_truth": "Cakes",
+      "generated_answer": "Maria dropped off baked goods at the homeless shelter on 24 July 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What attributes describe John?",
+      "ground_truth": "Selfless, family-oriented, passionate, rational",
+      "generated_answer": "John is described as dedicated, committed, perseverant, determined, passionate, resourceful, resilient, adaptable, and someone who values unconditional love and loyalty. He is also seen as inspiring and supportive, with a strong bond with his family and friends.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria start volunteering at the homeless shelter?",
+      "ground_truth": "Around August 2022",
+      "generated_answer": "Maria started volunteering at the homeless shelter on 17 December 2021, which is about a year before the dialog date of 17 December 2022.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Who have written notes of gratitude to Maria?",
+      "ground_truth": "Cindy, Laura",
+      "generated_answer": "Laura and Cindy have written notes of gratitude to Maria.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John help renovate his hometown community center?",
+      "ground_truth": "2022",
+      "generated_answer": "John helped renovate his hometown community center in 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria take up community work with her church friends?",
+      "ground_truth": "August 4, 2023",
+      "generated_answer": "Maria took up community work with her church friends on 4 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria receive a medal from the homeless shelter?",
+      "ground_truth": "The week before 9 August 2023",
+      "generated_answer": "Maria received a medal from the homeless shelter on 2 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John participate in a 5K charity run?",
+      "ground_truth": "first weekend of August 2023",
+      "generated_answer": "John participated in a 5K charity run on 9 August 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What causes has John done events for?",
+      "ground_truth": "Toy drive, Community food drive, veterans, domestic violence",
+      "generated_answer": "John has done events for causes including victims of domestic abuse, homelessness, veterans and their families, and unemployment through community food drives.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria get Coco?",
+      "ground_truth": "Two weeks before 11 August 2023",
+      "generated_answer": "Maria got Coco on 6 August 2023, as she mentioned adopting the puppy from a shelter on that date.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John go on a camping trip with Max?",
+      "ground_truth": "The summer of 2022",
+      "generated_answer": "John went on a camping trip with Max last summer, which would be around June to August 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are Maria's dogs' names?",
+      "ground_truth": "Coco, Shadow",
+      "generated_answer": "Maria's dogs' names are Coco and Shadow. Coco was adopted on 6 August 2023, and Shadow was mentioned in a conversation on 13 August 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Maria adopt Shadow?",
+      "ground_truth": "The week before 13 August 2023",
+      "generated_answer": "Maria adopted Shadow on 6 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+      "ground_truth": "two",
+      "generated_answer": "Maria has adopted one dog from the shelter, which she mentioned on 6 August 2023.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How many weeks passed between Maria adopting Coco and Shadow?",
+      "ground_truth": "two weeks",
+      "generated_answer": "Maria adopted Coco two weeks before 17 December 2022, which means she adopted Coco on 3 December 2022. She then adopted Shadow on 6 August 2023. The time between these two dates is approximately 8 months and 3 weeks, or about 35 weeks.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What job might Maria pursue in the future?",
+      "ground_truth": "Shelter coordinator, Counselor",
+      "generated_answer": "Maria might pursue a future in community work, volunteering, or helping with local events, as she has expressed interest in supporting the community and has been involved in volunteering at shelters.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is John's main focus in local politics?",
+      "ground_truth": "Improving education and infrastructure",
+      "generated_answer": "John's main focus in local politics is improving education and infrastructure in the community. He believes that good access to quality education and updated infrastructure are key to a thriving community.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What sparked John's interest in improving education and infrastructure in the community?",
+      "ground_truth": "Seeing how lack of education and crumbling infrastructure affected his neighborhood while growing up.",
+      "generated_answer": "John's interest in improving education and infrastructure in the community was sparked by his experiences growing up, where he witnessed the negative effects of lack of education and crumbling infrastructure on his neighborhood. Additionally, engaging in community meetings and hearing inspiring stories from others fueled his passion to make a difference.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did the extra funding help the school shown in the photo shared by John?",
+      "ground_truth": "Enabled needed repairs and renovations, making the learning environment safer and more modern for students.",
+      "generated_answer": "The extra funding helped the school by enabling needed repairs and renovations, making the learning environment safer and more modern for students.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of workout class did Maria start doing in December 2023?",
+      "ground_truth": "aerial yoga",
+      "generated_answer": "Maria started doing aerial yoga in December 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Maria donate to a homeless shelter in December 2023?",
+      "ground_truth": "old car",
+      "generated_answer": "Maria donated her old car to a homeless shelter on 21 December 2022. There is no information about any donations made in December 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of meal did John and his family make together in the photo shared by John?",
+      "ground_truth": "pizza",
+      "generated_answer": "John and his family made pizza together, enjoying the process of picking out toppings and sharing a tasty meal.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of online group did John join?",
+      "ground_truth": "service-focused online group",
+      "generated_answer": "John joined a service-focused online group on 25 December 2022, which serves as a virtual support group for advocates of the military.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of activities did John and his mates from the online group do as part of their service efforts?",
+      "ground_truth": "gave out food and supplies at a homeless shelter, organized a toy drive for kids in need",
+      "generated_answer": "John and his mates from the online group participated in various service activities, including going to a homeless shelter to distribute food and supplies, organizing events, and setting up a 5K charity run to support veterans and their families. They are also brainstorming ways to help underserved communities with education, mentorship, job training, and resume building.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who inspired Maria to start volunteering?",
+      "ground_truth": "Her aunt",
+      "generated_answer": "Maria was inspired to start volunteering by her aunt, who believed in volunteering and helped her family when they were struggling.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Maria sit with the little girl at the shelter event in February 2023?",
+      "ground_truth": "The girl seemed sad and had no other family",
+      "generated_answer": "Maria sat with the little girl at the shelter event in February 2023 because she noticed the girl, who was around 8 years old, sitting alone and looking sad. After talking to her, Maria learned that the girl had no other family, which deeply affected her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Jean go through before meeting Maria?",
+      "ground_truth": "divorce, job loss, homelessness",
+      "generated_answer": "Before meeting Maria, Jean went through a tough time, including a divorce, losing her job, and becoming homeless. Despite these challenges, she maintained a positive outlook and valued the little things in life.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did John decide to run for office again?",
+      "ground_truth": "saw the impact he could make in the community through politics",
+      "generated_answer": "John decided to run for office again because he felt a strong urge to serve his country and community, wanted to make an impact, and was inspired by the motivated people around him. He also saw the potential to create positive changes in the community through politics.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity did John's colleague, Rob, invite him to?",
+      "ground_truth": "beginner's yoga class",
+      "generated_answer": "John's colleague, Rob, invited him to a beginner's yoga class.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is the name of John's one-year-old child?",
+      "ground_truth": "Kyle",
+      "generated_answer": "John's one-year-old child is named Kyle.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How often does John take his kids to the park?",
+      "ground_truth": "A few times a week",
+      "generated_answer": "John takes his kids to the park a few times a week, specifically mentioning three times a week in one instance.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Maria make for her home to remind her of a trip to England?",
+      "ground_truth": "painting of a castle on a hill",
+      "generated_answer": "Maria made decor inspired by the castles she saw during her trip to England to bring a reminder of the world's beauty to her home.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Maria get the idea for the castle shadow box in her home?",
+      "ground_truth": "England",
+      "generated_answer": "Maria got the idea for the castle shadow box in her home from a trip to England a few years ago, where she was mesmerized by the castles and wanted to bring that magic into her space.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John receive a certificate for?",
+      "ground_truth": "completion of a university degree",
+      "generated_answer": "John received a certificate for finishing his degree, which he described as a symbol of all the obstacles he had to overcome to achieve that goal.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What areas is John particularly interested in for policymaking?",
+      "ground_truth": "education and infrastructure",
+      "generated_answer": "John is particularly interested in improving education and infrastructure for his community. He is also passionate about veterans and their rights.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Maria participate in last weekend before April 10, 2023?",
+      "ground_truth": "a 5K charity run",
+      "generated_answer": "Maria participated in a 5K charity run for a homeless shelter last weekend before April 10, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What event did John volunteer at last weekend?",
+      "ground_truth": "career fair at a local school",
+      "generated_answer": "John volunteered at a community event to raise money for a good cause last weekend, which was on 10-11 December 2022.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did John do that put a strain on his wallet?",
+      "ground_truth": "His car broke down",
+      "generated_answer": "John's car broke down on Friday, 9 December 2022, which he is trying to get fixed, and this situation is putting a strain on his wallet.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did John explore on a road trip last year?",
+      "ground_truth": "Pacific Northwest",
+      "generated_answer": "John explored the coast in the Pacific Northwest and visited some national parks during a road trip in 2022.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What topic has John been blogging about recently?",
+      "ground_truth": "politics and the government",
+      "generated_answer": "John has been blogging about politics, government, education reform, and infrastructure development recently.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did John start blogging about politics and policies?",
+      "ground_truth": "raise awareness and start conversations to create positive change",
+      "generated_answer": "John started blogging about politics and policies because he cares about making a real impact and found the experience satisfying. His involvement was also inspired by seeing the positive changes he could contribute to in the community through politics.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the focus of John's recent research and writing on his blog?",
+      "ground_truth": "education reform and infrastructure development",
+      "generated_answer": "John's recent research and writing on his blog have focused on education reform and infrastructure development, emphasizing their importance for thriving communities.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John attend with his colleagues in March 2023?",
+      "ground_truth": "a tech-for-good convention",
+      "generated_answer": "John attended a convention with his colleagues in March 2023, where they connected with like-minded individuals passionate about using technology for good in their community.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How often does John work out with his family?",
+      "ground_truth": "Three times a week",
+      "generated_answer": "John works out with his family three times a week.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How has John's fitness improved since starting boot camps with his family?",
+      "ground_truth": "More energy, gains in strength and endurance",
+      "generated_answer": "John's fitness has improved since starting boot camps with his family in April 2023, as he has noticed increased energy, strength, and endurance. The family has been supportive of each other, which has been motivating for John.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of food did Maria have on her dinner spread iwth her mother?",
+      "ground_truth": "Salads, sandwiches, homemade desserts",
+      "generated_answer": "Maria had a dinner spread with her mother that included lots of great things like salads, sandwiches, and homemade desserts, with her favorite being the amazing banana split sundae.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity did Maria and her mom do together in May 2023?",
+      "ground_truth": "Made dinner together",
+      "generated_answer": "In May 2023, Maria joined a nearby church on 5 May 2023 to feel closer to a community and her faith. Additionally, she was involved in planning a ring-toss tournament for a homeless shelter's fundraiser later that month.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Maria do to feel closer to a community and her faith?",
+      "ground_truth": "joined a nearby church",
+      "generated_answer": "Maria joined a nearby church on 5 May 2023 to feel closer to a community and her faith. She also volunteered at a homeless shelter, giving talks and participating in charity events, which helped her connect with others and feel fulfilled.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Maria join a nearby church recently?",
+      "ground_truth": "to feel closer to a community and her faith",
+      "generated_answer": "Maria joined a nearby church on 5 May 2023 to feel closer to a community and her faith. She has found the experience to be really great so far.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John host for the veterans in May 2023 as part of the project?",
+      "ground_truth": "a small party to share their stories",
+      "generated_answer": "In May 2023, John hosted a small party on 19 May 2023, inviting veterans to share their stories and foster connections among them.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John and the veterans do during the small party?",
+      "ground_truth": "share stories and make connections",
+      "generated_answer": "During the small party, John and the veterans shared their stories, made connections, and found camaraderie, which brought smiles and a sense of community.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What emotions did John feel during the small party with the veterans?",
+      "ground_truth": "heartwarming",
+      "generated_answer": "During the small party with the veterans, John felt a sense of community, togetherness, inspiration, and hope. He also experienced emotions of joy and connection as he witnessed the camaraderie among the veterans.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What event is Maria getting ready for at the shelter on May 25, 2023?",
+      "ground_truth": "fundraiser",
+      "generated_answer": "Maria is getting ready for a chili cook-off at the fundraiser for the homeless shelter on May 25, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Maria need to spread the word about for the fundraiser for the volunteer shelter?",
+      "ground_truth": "chili cook-off",
+      "generated_answer": "Maria needs to spread the word about the chili cook-off at the fundraiser for the volunteer shelter.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the name of the pet that John had to say goodbye to on 3 June, 2023?",
+      "ground_truth": "Max",
+      "generated_answer": "The name of the pet that John had to say goodbye to on 3 June, 2023, was Max.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long was Max a part of John's family?",
+      "ground_truth": "10 years",
+      "generated_answer": "Max was a part of John's family for 10 years.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does John plan to honor the memories of his beloved pet?",
+      "ground_truth": "By considering adopting a rescue dog",
+      "generated_answer": "John plans to honor the memories of his beloved pet, Max, by cherishing the time they had together and making new memories with his family. He reflects on the joy Max brought to their lives and aims to keep his spirit alive through shared experiences.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What important values does John want to teach his kids through adopting a rescue dog?",
+      "ground_truth": "Responsibility and compassion",
+      "generated_answer": "John wants to teach his kids responsibility and compassion through adopting a rescue dog, as well as the importance of unconditional love and loyalty.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new activity did Maria start recently, as mentioned on 3 June, 2023?",
+      "ground_truth": "volunteering at a local dog shelter once a month",
+      "generated_answer": "Maria started going to the gym on 9 June 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Maria say it was like being at the waterfall in Oregon?",
+      "ground_truth": "Like being in a fairy tale",
+      "generated_answer": "Maria said being at the waterfall in Oregon felt like being in a fairy tale, describing the calming sound of the water and the beautiful surroundings as truly magical.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Maria say she feels when doing upside-down yoga poses?",
+      "ground_truth": "Free and light",
+      "generated_answer": "Maria says that doing upside-down yoga poses makes her feel free and light.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What exciting news did Maria share on 16 June, 2023?",
+      "ground_truth": "joined a gym",
+      "generated_answer": "On 16 June 2023, Maria shared that she had joined a gym on 9 June 2023, and she was excited about sticking to her workout routine and meeting awesome people there.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What yoga activity has Maria been trying to improve her strength and endurance?",
+      "ground_truth": "kundalini yoga",
+      "generated_answer": "Maria has been trying to improve her strength and endurance by practicing kundalini yoga.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John recently get promoted to?",
+      "ground_truth": "assistant manager",
+      "generated_answer": "John was recently promoted to assistant manager.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+      "ground_truth": "self-doubt",
+      "generated_answer": "One of the biggest challenges John faced in his journey to becoming assistant manager was self-doubt, where he questioned if he was on the right track.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does John describe the support he received during his journey to becoming assistant manager?",
+      "ground_truth": "having support at home and his own grit",
+      "generated_answer": "John describes the support he received as vital, emphasizing that support from loved ones, especially his family, helped him overcome self-doubt and stay motivated during his journey to becoming assistant manager. He appreciates the encouragement and belief from those around him, which kept him going through challenges.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of event did John and his family attend in June 2023?",
+      "ground_truth": "live music event",
+      "generated_answer": "John and his family attended a community event in June 2023 that featured arts and crafts, fun activities, and games for families.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Why did Maria need to help her cousin find a new place to live?",
+      "ground_truth": "Her cousin had to leave and find a new place in a hurry.",
+      "generated_answer": "Maria needed to help her cousin find a new place to live because her cousin had a tough time recently and had to leave and find a new place in a hurry, which was really stressful for her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What event did John participate in to show support for veterans' rights?",
+      "ground_truth": "marching event",
+      "generated_answer": "John participated in a marching event for veterans' rights to show his support.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What inspired John to join the marching event for veterans' rights?",
+      "ground_truth": "Respect for the military and the desire to show support",
+      "generated_answer": "John was inspired to join the marching event for veterans' rights after hearing inspiring and heartbreaking stories from an elderly veteran named Samuel, which filled him with hope and reminded him of the sacrifices veterans make. Additionally, the motivated people around him and his passion for supporting veterans also played a significant role in his decision.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How often does John get to see sunsets like the one he shared with Maria?",
+      "ground_truth": "At least once a week",
+      "generated_answer": "John gets to see sunsets like the one he shared with Maria at least once a week.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What natural disaster affected John's old area on 7 July, 2023?",
+      "ground_truth": "Flood",
+      "generated_answer": "John's old area was affected by a nasty flood on 30 June 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How did the flood impact the homes in John's old area?",
+      "ground_truth": "Lots of homes were ruined.",
+      "generated_answer": "The flood on 30 June 2023 severely impacted John's old area, resulting in many homes being ruined due to the poor infrastructure.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What motivated Maria and John to discuss potential solutions for their community on 7 July, 2023?",
+      "ground_truth": "Flood in John's old area",
+      "generated_answer": "Maria and John were motivated to discuss potential solutions for their community on 7 July 2023 due to their shared passion for helping others and making a positive impact, as well as their commitment to working together to inspire hope and kindness in their community.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Maria plan to do later on the evening of 7 July, 2023?",
+      "ground_truth": "have dinner with friends from the gym",
+      "generated_answer": "Later on the evening of 7 July, 2023, Maria planned to continue working with John to make a difference in their community.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of activities did Maria do at the picnic with her church friends?",
+      "ground_truth": "played games like charades and a scavenger hunt",
+      "generated_answer": "At the picnic with her church friends on the weekend of 10-11 December 2022, Maria chilled under the trees, played games, and ate yummy food.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John appreciate about the veteran's hospital visit?",
+      "ground_truth": "the resilience of the veterans and their inspiring stories",
+      "generated_answer": "John appreciates the sense of community and togetherness he felt during his visit to the veteran's hospital, realizing the importance of helping veterans and showing respect for their service.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did John take away from visiting the veteran's hospital?",
+      "ground_truth": "appreciation for giving back",
+      "generated_answer": "John took away a deep appreciation for what we have, the importance of giving back, and a sense of community and togetherness from visiting the veteran's hospital. He was inspired by the resilience of the veterans he met, which filled him with hope and reminded him of their sacrifices.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did John feel inspired to join the military after the visit to the hospital?",
+      "ground_truth": "seeing the resilience of the veterans",
+      "generated_answer": "John felt inspired to join the military after visiting the veteran's hospital on 10 July 2023, where he met amazing people and appreciated their resilience, which filled him with hope and a renewed sense of purpose to give back.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "In what activity did Maria and her church friends participate in July 2023?",
+      "ground_truth": "hiking",
+      "generated_answer": "In July 2023, Maria and her church friends participated in activities like charades and a scavenger hunt, and she also dropped off baked goods at a homeless shelter on 24 July 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What does John think about trying new classes at the yoga studio?",
+      "ground_truth": "Trying new classes is a fun way to switch up the exercise routine.",
+      "generated_answer": "John thinks trying new classes is a great way to push yourself and mix things up. He finds it rewarding and believes it can be beneficial for both physical and mental well-being.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which activity has John done apart from yoga at the studio?",
+      "ground_truth": "weight training",
+      "generated_answer": "Apart from yoga, John has done weight training and kickboxing at the studio.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What community service did Maria mention that she was involved in on 31 July, 2023?",
+      "ground_truth": "volunteered at a homeless shelter",
+      "generated_answer": "Maria mentioned that she was involved in community service at the homeless shelter on 31 July, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Maria start volunteering at the homeless shelter?",
+      "ground_truth": "Witnessed a family struggling on the streets and reached out to the shelter",
+      "generated_answer": "Maria started volunteering at the homeless shelter about a year ago after witnessing a family struggling on the streets, which inspired her to help.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John do the week before August 3, 2023 involving his kids?",
+      "ground_truth": "Had a meaningful experience at a military memorial",
+      "generated_answer": "The week before August 3, 2023, John set up a 5K charity run in their neighborhood to help veterans and their families, which involved his kids participating in the event.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John describe his kids' reaction at the military memorial?",
+      "ground_truth": "awestruck and humbled",
+      "generated_answer": "John described his kids' reaction at the military memorial as being \"awestruck and humbled.\" He also mentioned that it was a moving experience for all of them.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why does Maria think it's important for younger generations to visit military memorials?",
+      "ground_truth": "To remember and appreciate those who served",
+      "generated_answer": "Maria thinks it's important for younger generations to visit military memorials to remember and appreciate those who served, as it helps instill a sense of humility and gratitude for their sacrifices.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John believe is important for children regarding veterans?",
+      "ground_truth": "Teaching them to respect and appreciate those who served",
+      "generated_answer": "John believes it is important to teach children to respect and appreciate veterans for their service to the country. He emphasizes the significance of showing support and valuing veterans in the community.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What happened to John's job in August 2023?",
+      "ground_truth": "John lost his job at the mechanical engineering company.",
+      "generated_answer": "In August 2023, John faced challenges with his job, as indicated by Maria's concern about it on 5 August. However, he also mentioned that he may have found a job at a tech company that aligns with his mechanical skills, suggesting a potential positive change in his employment situation.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity did Maria take up with her friends from church in August 2023?",
+      "ground_truth": "community work",
+      "generated_answer": "In August 2023, Maria took up community work with her friends from church, which she found to be super rewarding. She also volunteered at a shelter on 11 August 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John do to help his community last year in his hometown?",
+      "ground_truth": "Helped renovate a rundown community center.",
+      "generated_answer": "Last year, in 2022, John helped renovate a rundown community center in his hometown. He also participated in community events, including a food drive and activities at a homeless shelter.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What cause did the 5K charity run organized by John support?",
+      "ground_truth": "veterans and their families",
+      "generated_answer": "The 5K charity run organized by John supported veterans and their families.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who did John work with to raise awareness and funds for victims of domestic abuse?",
+      "ground_truth": "a local organization",
+      "generated_answer": "John worked with a local organization that helps victims of domestic abuse to raise awareness and funds for the cause. He collaborated with Maria, who also supported the initiative.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What recognition did Maria receive at the homeless shelter in August 2023?",
+      "ground_truth": "a medal for volunteering",
+      "generated_answer": "In August 2023, Maria received a medal for her volunteering efforts at the homeless shelter on 2 August 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is the name of Maria's puppy she got two weeks before August 11, 2023?",
+      "ground_truth": "Coco",
+      "generated_answer": "Maria's puppy that she got two weeks before August 11, 2023, is named Coco.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity did John and Max enjoy together last summer?",
+      "ground_truth": "Camping",
+      "generated_answer": "John and Max enjoyed a camping trip together last summer, where they hiked, swam, and made great memories.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does John describe the camping trip with Max?",
+      "ground_truth": "Peaceful and awesome",
+      "generated_answer": "John describes the camping trip with Max as a \"blast\" where they hiked, swam, and made great memories, calling it a \"really peaceful and awesome experience.\"",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why does John say he feels stuck and questioning his decisions and goals?",
+      "ground_truth": "Not feeling like making much of an impact",
+      "generated_answer": "John feels stuck and is questioning his decisions and goals because he doesn't feel like he's making much of an impact and is struggling with self-doubt, especially after facing various hurdles and failing the military aptitude test.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is the name of Maria's second puppy?",
+      "ground_truth": "Shadow",
+      "generated_answer": "Maria's second puppy is named Shadow.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How is Maria's new puppy adjusting to its new home?",
+      "ground_truth": "doing great - learning commands and house training",
+      "generated_answer": "Maria's new puppy, Coco, is adjusting well to her new home. She is learning commands and house training, and Maria feels blessed to have her, as Coco brings a lot of joy to her life.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is John currently doing as a volunteer in August 2023?",
+      "ground_truth": "mentoring students at a local school",
+      "generated_answer": "In August 2023, John is volunteering as a mentor for a local school, which he finds very rewarding. Additionally, he participated in a community event to raise money for a good cause and set up a 5K charity run to help veterans and their families.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activities does John's family enjoy doing together?",
+      "ground_truth": "going for hikes, hanging out at the park, having picnics, playing board games, having movie nights",
+      "generated_answer": "John's family enjoys activities such as climbing, sliding, playing games, going for hikes, having picnics, spending time outdoors, playing board games, having movie nights at home, and making pizza together.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did the donations help John's community acquire on 16 August, 2023?",
+      "ground_truth": "a brand new fire truck",
+      "generated_answer": "On 16 August 2023, the donations helped John's community acquire a brand new fire truck, along with items like canned food, toiletries, and clothes.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    }
+  ],
+  "summary": {
+    "pipeline": "VAC Memory System v1",
+    "architecture": [
+      "1. Query Classification",
+      "2. LLM Synonym Expansion (qwen2.5:14b)",
+      "3. [TARGET] MCA-first filter",
+      "4. [TARGET] FAISS top-k (semantic, BGE-large 1024D)",
+      "5. [TARGET] BM25 top-k (sparse)",
+      "6. Union(MCA, FAISS, BM25) -> ~112 docs",
+      "7. [FIRE] Cross-Encoder DIRECT reranking (ALL ~112 docs -> top-15)",
+      "8. gpt-4o-mini answer (T=0.0, max_tokens=150)   MEM0 OFFICIAL!"
+    ],
+    "embedding_model": "bge-large-en-v1.5",
+    "embedding_dim": 1024
+  }
+}

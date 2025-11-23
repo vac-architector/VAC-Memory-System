@@ -1,0 +1,1785 @@
+{
+  "source_file": "/mnt/d/LoCoMo_SOTA_v4.64/results/baseline_100runs_20251120/v4.64_union_direct_ce_20251121_174728.json",
+  "judge_model": "gpt-4o-mini (GENEROUS - Mem0 official)",
+  "judge_prompt": "ACCURACY_PROMPT (generous grading)",
+  "filter": "Cat1-4 only (no adversarial Cat5)",
+  "llm_judge_accuracy": 0.8638743455497382,
+  "llm_judge_correct": 165,
+  "llm_judge_total": 191,
+  "category_breakdown": {
+    "2": {
+      "correct": 35,
+      "total": 42
+    },
+    "1": {
+      "correct": 19,
+      "total": 21
+    },
+    "3": {
+      "correct": 6,
+      "total": 10
+    },
+    "4": {
+      "correct": 105,
+      "total": 118
+    }
+  },
+  "category_breakdown_named": {
+    "2": {
+      "correct": 35,
+      "total": 42,
+      "label": "Temporal"
+    },
+    "1": {
+      "correct": 19,
+      "total": 21,
+      "label": "Single-hop (Factual)"
+    },
+    "3": {
+      "correct": 6,
+      "total": 10,
+      "label": "Multi-hop"
+    },
+    "4": {
+      "correct": 105,
+      "total": 118,
+      "label": "Commonsense"
+    }
+  },
+  "judge_results": [
+    {
+      "question": "What kind of project was Jolene working on in the beginning of January 2023?",
+      "ground_truth": "electricity engineering project",
+      "generated_answer": "In the beginning of January 2023, Jolene was working on an electrical engineering project, which she completed on 16 January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which of Deborah`s family and friends have passed away?",
+      "ground_truth": "mother, father, her friend Karlie",
+      "generated_answer": "Deborah's dad passed away on 25 January 2023, and her mom has also passed away, though the exact date is not specified. Additionally, she lost a friend on 15 February 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah`s mother pass away?",
+      "ground_truth": "a few years before 2023",
+      "generated_answer": "Deborah's mother passed away a few years ago, but the exact date is not specified in the context.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene`s mother pass away?",
+      "ground_truth": "in 2022",
+      "generated_answer": "Jolene's mother passed away in 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene's mom gift her a pendant?",
+      "ground_truth": "in 2010",
+      "generated_answer": "Jolene's mom gifted her the pendant in 2010 in Paris.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "In what country did Jolene's mother buy her the pendant?",
+      "ground_truth": "In France",
+      "generated_answer": "Jolene's mother bought her the pendant in Paris in 2010.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What symbolic gifts do Deborah and Jolene have from their mothers?",
+      "ground_truth": "pendants",
+      "generated_answer": "Deborah has a pendant that reminds her of her mother, and Jolene has a pendant that she received from her mother in 2010 in Paris, which symbolizes freedom for her.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which country were Jolene and her mother visiting in 2010?",
+      "ground_truth": "France",
+      "generated_answer": "Jolene and her mother were visiting France, specifically Paris, in 2010.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What helped Deborah find peace when grieving deaths of her loved ones?",
+      "ground_truth": "yoga, old photos, the roses and dahlias in a flower garden, nature",
+      "generated_answer": "Deborah found peace while grieving the deaths of her loved ones through yoga, meditation, spending time in nature, reflecting on memories, and engaging in activities like gardening and artwork. She also mentioned that looking at family photos brings her comfort during difficult times.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah's father pass away?",
+      "ground_truth": "January 25, 2023",
+      "generated_answer": "Deborah's father passed away on 25 January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When was Deborah's parents' wedding?",
+      "ground_truth": "in 1993",
+      "generated_answer": "Deborah's parents' wedding was in 1993.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Is Deborah married?",
+      "ground_truth": "yes",
+      "generated_answer": "Yes, Deborah is married. She mentions her husband and refers to their relationship and family.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah receive an appreciation letter from her community?",
+      "ground_truth": "January 26, 2023",
+      "generated_answer": "Deborah received an appreciation letter from her community on 26 January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What places give Deborah peace?",
+      "ground_truth": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+      "generated_answer": "Deborah finds peace in several places, including Bali, her garden with roses and dahlias, a spot by the window in her old home, a park with a forest trail, a nearby beach, and a special beach where she got married. Nature, yoga, and meditation also contribute to her sense of peace.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What were Deborah's mother's hobbies?",
+      "ground_truth": "reading, traveling, art, cooking",
+      "generated_answer": "Deborah's mother had several hobbies, including art, reading, gardening, cooking, and a passion for travel. She also loved flowers and enjoyed spending time outdoors.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What pets does Jolene have?",
+      "ground_truth": "snakes",
+      "generated_answer": "Jolene has two snakes named Susie and Seraphim. She has had Susie for two years as of 15 September 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are the names of Jolene's snakes?",
+      "ground_truth": "Susie, Seraphim",
+      "generated_answer": "Jolene's snakes are named Susie and Seraphim.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene buy her pet Seraphim?",
+      "ground_truth": "in 2022",
+      "generated_answer": "Jolene bought her pet Seraphim in 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "In what country did Jolene buy snake Seraphim?",
+      "ground_truth": "In France",
+      "generated_answer": "Jolene bought the snake Seraphim in Paris.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How many times has Jolene been to France?",
+      "ground_truth": "two times",
+      "generated_answer": "Jolene has been to France at least once, as she mentioned receiving a pendant from her mother in Paris in 2010. There is no information indicating how many times she has visited France in total.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which games have Jolene and her partner played together?",
+      "ground_truth": "Detroit, Walking Dead, Battlefield 1, It Takes Two, Overcooked 2",
+      "generated_answer": "Jolene and her partner have played \"It Takes Two,\" \"Overcooked 2,\" \"Detroit,\" and planned to play \"Walking Dead.\" Additionally, Jolene mentioned enjoying \"Monster Hunter: World\" and recommended games like \"Zelda BOTW\" and \"Animal Crossing: New Horizons.\"",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When do Jolene and her partner plan to complete the game \"Walking Dead\"?",
+      "ground_truth": "Saturday after 27 January, 2023",
+      "generated_answer": "Jolene and her partner plan to play \"Walking Dead\" on Saturday, 28 January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah meet Anna?",
+      "ground_truth": "31 January, 2023",
+      "generated_answer": "Deborah met Anna on 31 January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Jolene sometimes put off doing yoga?",
+      "ground_truth": "She's more interested in playing video games",
+      "generated_answer": "Jolene sometimes puts off doing yoga because she gets too caught up in her studies and forgets to prioritize self-care. She acknowledges the need to be more mindful of her stress levels and mental health.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What new yoga poses did Deborah try?",
+      "ground_truth": "Warrior II, Dancer Pose (Natarajasana), Tree pose",
+      "generated_answer": "Deborah tried the Tree Pose and the Dancer Pose (Natarajasana). She also mentioned trying different dance poses, including Warrior II.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are Jolene's favorite books?",
+      "ground_truth": "Sapiens, Avalanche by Neal Stephenson",
+      "generated_answer": "Jolene's favorite books include \"Sapiens\" by Yuval Noah Harari, which she finds fascinating, and \"Avalanche\" by Neal Stephenson, which she read in one sitting. She also mentioned reading a self-discovery book that resonated with her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which book did Jolene read in January 2023?",
+      "ground_truth": "Avalanche by Neal Stephenson",
+      "generated_answer": "Jolene read \"Avalanche\" by Neal Stephenson two weeks before 23 January 2023, which would be around 9 January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When was Jolene in Bogota?",
+      "ground_truth": "in summer 2022",
+      "generated_answer": "Jolene was in Bogota during the summer of 2022, as she mentioned taking a picture there on vacation last summer.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "In what country was Jolene during summer 2022?",
+      "ground_truth": "Colombia",
+      "generated_answer": "Jolene was in Colombia during summer 2022, specifically in Bogotá, where she took a vacation and enjoyed the sunset over the water.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene have a mini-retreat to reflect on her career?",
+      "ground_truth": "Wednesday before 9 February, 2023",
+      "generated_answer": "Jolene had a mini-retreat to reflect on her career on 8 February 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene have a dinner and drinks with her friends?",
+      "ground_truth": "21 February, 2023",
+      "generated_answer": "Jolene had dinner and drinks with her friends on 22 January 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When was the last photo of Deborah and Karlie taken?",
+      "ground_truth": "in summer 2022",
+      "generated_answer": "The last photo of Deborah and Karlie was taken last summer, which would be around the summer of 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When was Deborah in Bali?",
+      "ground_truth": "in 2022",
+      "generated_answer": "Deborah was in Bali in 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long have Jolene and her partner been together?",
+      "ground_truth": "for three years",
+      "generated_answer": "Jolene and her partner have been together for three years as of January 23, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which year did Jolene and her partner start dating?",
+      "ground_truth": "2020",
+      "generated_answer": "Jolene and her partner started dating in 2020, as they have been together for three years as of February 25, 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah go for her first morning jog in a nearby park?",
+      "ground_truth": "24 February, 2023",
+      "generated_answer": "Deborah went for her first morning jog in a nearby park on 24 February 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How old is Jolene?",
+      "ground_truth": "likely no more than 30; since she's in school",
+      "generated_answer": "I don't have information on Jolene's age.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Jolene take Seraphim to the park?",
+      "ground_truth": "Sunday before 2 March, 2023",
+      "generated_answer": "Jolene took Seraphim to the park on 26 February 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah start the yoga class in the neighborhood?",
+      "ground_truth": "Friday before 13 March, 2023",
+      "generated_answer": "Deborah started the yoga class in the neighborhood sometime before 24 February 2023, as she mentioned hosting a class for her neighbors on a Friday, but the exact date is not specified.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What time management techniques do Deborah and Jolene use?",
+      "ground_truth": "the Pomodoro Technique - 25 minutes work and 5-minute break, scheduler or to-do list, The Eisenhower Matrix, bullet journal",
+      "generated_answer": "Deborah uses planners or schedulers to stay organized and suggests breaking tasks into smaller pieces with set goals. Jolene employs the Pomodoro Technique (25 minutes of work followed by a 5-minute break) and utilizes a bullet journal for tracking tasks and organization.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Does Deborah live close to the beach or the mountains?",
+      "ground_truth": "beach",
+      "generated_answer": "Deborah lives close to the beach, as she frequently mentions her love for a nearby beach and enjoys activities there. There is no mention of her living near the mountains.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What ways do Deborah and Jolene use to enhance their yoga practice?",
+      "ground_truth": "candles, music, essential oils",
+      "generated_answer": "Deborah enhances her yoga practice by using candles and essential oils for a calming atmosphere, practicing mindful breathing, and engaging in gentle flow routines. Jolene creates a serene yoga space with candles and oils, listens to soft music, and incorporates meditation into her practice.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What music pieces does Deborah listen to during her yoga practice?",
+      "ground_truth": "Savana, Sleep",
+      "generated_answer": "Deborah listens to instrumental tracks with mellow melodies, including a favorite track called \"Savana,\" and an album called 'Sleep' during her yoga practice.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah go for a bicycle ride with Anna?",
+      "ground_truth": "first week of April, 2023",
+      "generated_answer": "Deborah went for a bicycle ride with Anna on 2 April 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah go to an art show with Anna?",
+      "ground_truth": "on 9 April, 2023",
+      "generated_answer": "Deborah went to an art show with Anna on 9 April 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene finish her robotics project?",
+      "ground_truth": "May 2023",
+      "generated_answer": "Jolene finished her robotics project in May 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long did Jolene work on the robotics project given to her by her Professor?",
+      "ground_truth": "four months",
+      "generated_answer": "Jolene worked on the robotics project from January 2020 until she wrapped it up in May 2023, which totals approximately 3 years and 4 months.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Jolene do yoga at Talkeetna?",
+      "ground_truth": "on 5 June, 2023",
+      "generated_answer": "Jolene did yoga at Talkeetna on 5 June 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which US state did Jolene visit during her internship?",
+      "ground_truth": "Alaska",
+      "generated_answer": "The memory context does not specify which US state Jolene visited during her internship.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How long has Jolene been doing yoga and meditation?",
+      "ground_truth": "about 3 years",
+      "generated_answer": "Jolene has been doing yoga and meditation for about 3 years, as she mentioned in multiple contexts.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which year did Jolene start practicing yoga?",
+      "ground_truth": "2020",
+      "generated_answer": "Jolene started practicing yoga approximately in 2020, as she mentioned she has been doing it for 3 years as of 21 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene buy a new aquarium for Seraphim?",
+      "ground_truth": "24 June, 2023",
+      "generated_answer": "Jolene bought a new aquarium for Seraphim on 24 June 2023, the day before she shared photos of Seraphim in it.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene lose a lot of progress in her work?",
+      "ground_truth": "last week of July 2023",
+      "generated_answer": "Jolene lost a lot of progress in her work on 25 July 2023, when she experienced a huge setback with her project.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene adopt her snake Susie?",
+      "ground_truth": "in 2021",
+      "generated_answer": "Jolene adopted her snake Susie in 2021, as she mentioned she had her for two years as of January 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which pet did Jolene adopt first - Susie or Seraphim?",
+      "ground_truth": "Susie",
+      "generated_answer": "Jolene adopted Susie first, as she mentioned having her for two years and got her in 2022. Seraphim was adopted later.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which pet did Jolene adopt more recently - Susie or Seraphim?",
+      "ground_truth": "Seraphim",
+      "generated_answer": "Jolene adopted Seraphim more recently than Susie. Seraphim was taken to the park on 26 February 2023, while Susie has been with Jolene for two years as of 15 September 2023, indicating she was adopted around September 2021.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah lead a meditation session during the sunset?",
+      "ground_truth": "week before 16 August, 2023",
+      "generated_answer": "Deborah led a meditation session during the sunset while sitting by the sea with Anna, but the exact date of this event is not specified in the provided context.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Jolene gift her partner a new console?",
+      "ground_truth": "17 August, 2023",
+      "generated_answer": "Jolene gifted her partner a new console on the 17th of January, 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What games does Jolene recommend for Deborah?",
+      "ground_truth": "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2",
+      "generated_answer": "Jolene recommends \"Zelda BOTW\" for Switch, \"Animal Crossing: New Horizons,\" \"Overcooked 2,\" and \"It Takes Two.\" She also mentioned planning to play \"Walking Dead\" and has played \"Detroit.\"",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What do Deborah and her husband do together?",
+      "ground_truth": "play detective games together, spend time outdoors and explore nature",
+      "generated_answer": "Deborah and her husband enjoy playing detective games together, gardening, and spending quality time bonding over shared activities.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah go to a yoga retreat near her mom's place?",
+      "ground_truth": "a week before 24 August,2023",
+      "generated_answer": "Deborah went to a yoga retreat near her mom's place on 17 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What projects is Jolene planning for next year?",
+      "ground_truth": "developing renewable energy finding ways to supply clean water to those with limited access",
+      "generated_answer": "Jolene is planning to work on projects focused on developing renewable energy solutions, particularly solar energy, and aims to create sustainable initiatives that positively impact communities. She is also considering teaming up with local schools to conduct workshops.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Deborah get her cats?",
+      "ground_truth": "Luna is from the shelter and Max is her mother's cat",
+      "generated_answer": "Deborah got her cat Max from her mother after she passed away, and she took Luna from a shelter.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How old are Deborah's cats?",
+      "ground_truth": "Max is 8 years old and Luna is 5 years old",
+      "generated_answer": "Deborah's cat Max is 8 years old, and her cat Luna is 5 years old.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Does Deborah like cats?",
+      "ground_truth": "Yes",
+      "generated_answer": "Yes, Deborah really loves cats. She has mentioned that she doesn't like dogs and prefers having cats as pets.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which country was Jolene located in during the last week of August 2023?",
+      "ground_truth": "Brazil",
+      "generated_answer": "During the last week of August 2023, Jolene was in Rio de Janeiro, as she mentioned returning from there on 29 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene and her partner return home from Rio de Janeiro?",
+      "ground_truth": "29 August, 2023",
+      "generated_answer": "Jolene and her partner returned home from Rio de Janeiro on 29 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was Jolene doing with her partner in Rio de Janeiro?",
+      "ground_truth": "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple",
+      "generated_answer": "Jolene and her partner checked out yoga classes and went on excursions while in Rio de Janeiro. They also took a hike together and discovered a peaceful waterfall oasis during their trip.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah visit Brazil?",
+      "ground_truth": "2020",
+      "generated_answer": "Deborah visited Brazil three years ago, which would be in 2020, and she mentioned being in Rio de Janeiro again in July 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Have Deborah and Jolene been to Rio de Janeiro?",
+      "ground_truth": "yes",
+      "generated_answer": "Yes, both Deborah and Jolene have been to Rio de Janeiro. Jolene visited recently, returning on 29 August 2023, and Deborah was there three years ago.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Is the friend who wrote Deborah the motivational quote no longer alive?",
+      "ground_truth": "likely yes",
+      "generated_answer": "Yes, the friend who wrote Deborah the motivational quote is no longer alive, as she mentioned he will \"never be able to support\" her and expressed that she misses him.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Deborah go to a community meetup?",
+      "ground_truth": "last week of August 2023",
+      "generated_answer": "Deborah went to a community meetup on 1 September 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Jolene's parents give her first console?",
+      "ground_truth": "when she was 10",
+      "generated_answer": "Jolene's parents gave her her first console when she was 10 years old, which would be in 2003, as the dialog date is in January 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Did Jolene teach herself how to play the console?",
+      "ground_truth": "yes",
+      "generated_answer": "Yes, Jolene taught herself how to play the console. She mentioned, \"I taught myself,\" and also noted that she learned to play on her own as a child.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
+      "ground_truth": "coffee and fresh pastries",
+      "generated_answer": "Deborah and Jolene plan to meet at a cafe next Monday, where they will try fresh pastries.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What card game is Deborah talking about?",
+      "ground_truth": "Exploding Kittens",
+      "generated_answer": "Deborah is talking about a card game, but she does not remember its name.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Jolene and her partner try scuba diving lessons?",
+      "ground_truth": "Friday before 17 September, 2023",
+      "generated_answer": "Jolene and her partner tried scuba diving lessons on 15 September 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Jolene and her partner find a cool diving spot?",
+      "ground_truth": "Phuket",
+      "generated_answer": "Jolene and her partner found a cool diving spot during a scuba diving lesson on 15 September 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Jolene and her partner spend most of September 2023?",
+      "ground_truth": "Phuket",
+      "generated_answer": "Jolene and her partner spent most of September 2023 at a meditation retreat in Phuket, where they engaged in various activities including yoga and hiking. They also tried scuba diving on 15 September 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Has Deborah tried surfing?",
+      "ground_truth": "yes",
+      "generated_answer": "Yes, Deborah has tried surfing; she mentioned it as something she discovered at a special beach where she got married.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Has Jolene tried surfing?",
+      "ground_truth": "no",
+      "generated_answer": "No, Jolene has not tried surfing yet, but she is keen to give it a shot and has been preparing to do so.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did the Deboran and Jolene agree to go surfing?",
+      "ground_truth": "in October 2023",
+      "generated_answer": "Deborah and Jolene agreed to go surfing sometime after 9 February 2023, as Jolene expressed her interest in surfing and mentioned wanting to find the right time and place for a lesson. However, an exact date for their agreement is not specified in the provided context.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which locations does Deborah practice her yoga at?",
+      "ground_truth": "at her mother's old home, park, yoga studio, beach",
+      "generated_answer": "Deborah practices yoga at a park near her house, a yoga retreat near her mom's place, and she also teaches classes in her neighborhood. Additionally, she has participated in yoga sessions at a local care home.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of professional activities does Jolene participate in to gain more experience in her field?",
+      "ground_truth": "present work at virtual conference, attend workshops  and intern at firms",
+      "generated_answer": "Jolene participates in studying, attending workshops, networking, and interning at a well-known engineering firm to gain more experience in her field.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of engineering projects has Jolene worked on?",
+      "ground_truth": "electrical engineering, robotics, sustainable water purifier, productive and affordable aerial surveillance system",
+      "generated_answer": "Jolene has worked on various engineering projects, including a prototype for aerial surveillance, an electrical engineering project completed on 16 January 2023, a robotics project, and a sustainable water purifier for a rural community. She is also focused on developing renewable energy solutions and aims to create sustainable initiatives that positively impact communities.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which community activities have Deborah and Anna participated in?",
+      "ground_truth": "yoga, running",
+      "generated_answer": "Deborah and Anna have participated in a running group, organized a free gardening class on 16 September 2023, and engaged in yoga and meditation activities. They also attended a community meetup on 1 September 2023 and shared personal stories to foster connections.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What gifts has Deborah received?",
+      "ground_truth": "an appreciate letter from her community, a flower bouqet from her friend, a motivational quote from a friend",
+      "generated_answer": "Deborah has received a bouquet from a friend, an amulet that reminds her of her mother, and a pendant that also symbolizes her connection to her mother. Additionally, she received a letter on 26 January 2023 from a group expressing gratitude for her positive influence.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which countries has Deborah traveled to?",
+      "ground_truth": "Thailand, Brazil",
+      "generated_answer": "Deborah has traveled to Bali in 2022 and Rio de Janeiro three years ago, which would be in 2020.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What activities does Deborah pursue besides practicing and teaching yoga?",
+      "ground_truth": "biking, going to art shows, running, organizing workshops to practice mindfulness and self-care, surfing, gardening",
+      "generated_answer": "Besides practicing and teaching yoga, Deborah pursues running, meditation, organizing workshops and events focused on mindfulness and self-care, and connecting with her community.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are the names of Jolene's snakes?",
+      "ground_truth": "Susie, Seraphim",
+      "generated_answer": "Jolene's snakes are named Susie and Seraphim.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are Jolene's favorite books?",
+      "ground_truth": "Sapiens, Avalanche by Neal Stephenson",
+      "generated_answer": "Jolene's favorite books include \"Sapiens\" by Yuval Noah Harari, which she finds fascinating, and \"Avalanche\" by Neal Stephenson, which she read in one sitting. She also mentioned reading a self-discovery book that resonated with her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What music pieces does Deborah listen to during her yoga practice?",
+      "ground_truth": "Savana, Sleep",
+      "generated_answer": "Deborah listens to instrumental tracks with mellow melodies, including a favorite track called \"Savana,\" and an album called 'Sleep' during her yoga practice.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What games does Jolene recommend for Deborah?",
+      "ground_truth": "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2",
+      "generated_answer": "Jolene recommends \"Zelda BOTW\" for Switch, \"Animal Crossing: New Horizons,\" \"Overcooked 2,\" and \"It Takes Two.\" She also mentioned planning to play \"Walking Dead\" and has played \"Detroit.\"",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What projects is Jolene planning for next year?",
+      "ground_truth": "developing renewable energy finding ways to supply clean water to those with limited access",
+      "generated_answer": "Jolene is planning to work on projects focused on developing renewable energy, particularly solar, to help communities and reduce dependence on non-renewables. She is also interested in sustainable initiatives and innovative solutions for environmental issues.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Deborah get her cats?",
+      "ground_truth": "Luna is from the shelter and Max is her mother's cat",
+      "generated_answer": "Deborah got her cat Max from her mother after she passed away, and she took Luna from a shelter.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How old are Deborah's cats?",
+      "ground_truth": "Max is 8 years old and Luna is 5 years old",
+      "generated_answer": "Deborah's cat Max is 8 years old, and her cat Luna is 5 years old.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was Jolene doing with her partner in Rio de Janeiro?",
+      "ground_truth": "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple",
+      "generated_answer": "Jolene and her partner checked out yoga classes and went on excursions while in Rio de Janeiro. They also took a hike together and discovered a peaceful waterfall oasis during their trip.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Have Deborah and Jolene been to Rio de Janeiro?",
+      "ground_truth": "yes",
+      "generated_answer": "Yes, both Deborah and Jolene have been to Rio de Janeiro. Jolene visited recently, returning on 29 August 2023, and Deborah was there three years ago.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene's parents give her first console?",
+      "ground_truth": "when she was 10",
+      "generated_answer": "Jolene's parents gave her her first console when she was 10 years old, which would be in 2003, as the dialog date is January 23, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
+      "ground_truth": "coffee and fresh pastries",
+      "generated_answer": "Deborah and Jolene plan to meet at a cafe next Monday, where they will try fresh pastries.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What project did Jolene finish last week before 23 January, 2023?",
+      "ground_truth": "an electrical engineering project",
+      "generated_answer": "Jolene finished an electrical engineering project on 16 January 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Jolene buy her pet snake?",
+      "ground_truth": "A year ago",
+      "generated_answer": "Jolene bought her pet snake Susie a year ago in Paris, which would be around January 2022.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What project was Jolene working on as of 1 February, 2023?",
+      "ground_truth": "Robotics project",
+      "generated_answer": "As of 1 February 2023, Jolene was working on a prototype that could revolutionize aerial surveillance.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Deborah meet her new neighbor Anna?",
+      "ground_truth": "yoga in the park",
+      "generated_answer": "Deborah met her new neighbor Anna at yoga in the park on 31 January 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity did Jolene and her partner plan to do together instead of resuming yoga?",
+      "ground_truth": "play the console",
+      "generated_answer": "Jolene and her partner planned to play video games together instead of resuming yoga.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What milestone did Jolene achieve recently on 4 February, 2023?",
+      "ground_truth": "Design and build a sustainable water purifier for a rural community",
+      "generated_answer": "On 4 February 2023, Jolene expressed her determination to continue working in engineering and making a positive impact on communities in need. She also mentioned feeling motivated to pursue her passions.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is Jolene's favorite book which she mentioned on 4 February, 2023?",
+      "ground_truth": "\"Sapiens\"",
+      "generated_answer": "Jolene's favorite book, which she mentioned on 4 February 2023, is \"Sapiens\" by Yuval Noah Harari.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Deborah bring with her whenever she comes to reflect on her mom?",
+      "ground_truth": "amulet",
+      "generated_answer": "Deborah brings an amulet with her whenever she comes to reflect on her mom. She feels it helps her feel her mother's love and brings her comfort.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new outlook did Jolene gain after her mini retreat on 9 February, 2023?",
+      "ground_truth": "A confidence boost",
+      "generated_answer": "After her mini retreat on 9 February 2023, Jolene gained a new outlook that emphasized the importance of incorporating relaxation, self-care, and balance in her life alongside her engineering studies. She also experienced a significant confidence boost and a new level of joy and happiness.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What cool stuff did Jolene accomplish at the retreat on 9 February, 2023?",
+      "ground_truth": "Came up with neat solutions for her engineering project",
+      "generated_answer": "On 9 February 2023, Jolene accomplished significant progress on her engineering project, developing neat solutions that excited her and provided a confidence boost. Additionally, she reflected on her life during a mini retreat on 8 February 2023, which was a positive experience for her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What idea did Jolene have to help underprivileged kids learn about STEM subjects on 9 February, 2023?",
+      "ground_truth": "A volunteer program where engineers teach STEM to underprivileged kids",
+      "generated_answer": "On 9 February 2023, Jolene had the idea of teaming up with local schools and centers to conduct workshops, inviting engineers as guest speakers to show kids their career options in STEM subjects.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Jolene plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "ground_truth": "As guest speakers for workshops",
+      "generated_answer": "Jolene plans to involve local engineers by teaming up with local schools and centers to conduct workshops, where engineers can be invited as guest speakers to showcase career options to the kids.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What gave Deborah peace in the garden she visited?",
+      "ground_truth": "Roses and dahlias",
+      "generated_answer": "Deborah finds peace in the garden through the roses and dahlias, as well as the calming effects of nature. She spends time there to find comfort after losing a friend on 15 February 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Deborah spend time in the garden?",
+      "ground_truth": "to find comfort after losing a friend",
+      "generated_answer": "Deborah spent time in the garden to find comfort after losing a friend on 15 February 2023, as the roses and dahlias bring her peace.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Jolene and her partner initially meet?",
+      "ground_truth": "In an engineering class in college",
+      "generated_answer": "Jolene and her partner initially met in an engineering class in college, where they quickly became friends before their relationship blossomed into something more.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity does Deborah incorporate into her daily routine after going for a morning jog in the park?",
+      "ground_truth": "spending time with loved ones",
+      "generated_answer": "After going for a morning jog in the park, Deborah incorporates yoga and meditation into her daily routine.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "According to Jolene, what does exercise help her to feel?",
+      "ground_truth": "connected to her body",
+      "generated_answer": "According to Jolene, exercise helps her feel calmer, clearer, peaceful, balanced, and recharged. It also relieves stress and tension, allowing her to handle challenges more easily.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Deb share a photo of, which brought a smile to Jolene's face?",
+      "ground_truth": "a yellow coffee cup with a handwritten message",
+      "generated_answer": "Deb shared a photo that brought a smile to Jolene's face, although the specific content of the photo is not detailed in the provided context.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is one of Jolene's favorite dishes?",
+      "ground_truth": "lasagna",
+      "generated_answer": "One of Jolene's favorite dishes is lasagna.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What picture did Jolene share related to feeling overwhelmed?",
+      "ground_truth": "a photo of a desk with a notebook and a computer monitor",
+      "generated_answer": "Jolene shared a picture related to feeling overwhelmed when she mentioned, \"Here's a picture I took on vacation last summer in Bogota,\" which she described as beautiful and calming, helping her appreciate nature's calming power.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Jolene and Deb discuss as a helpful strategy for studying and time management?",
+      "ground_truth": "breaking tasks into smaller pieces and setting goals, using planners or schedulers",
+      "generated_answer": "Jolene and Deb discussed using a bullet journal for tracking tasks and staying organized, as well as the Pomodoro Technique, which involves working for 25 minutes followed by a 5-minute break, to help with time management and avoid burnout.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Jolene ask Deb to help with on 13 March, 2023?",
+      "ground_truth": "time management",
+      "generated_answer": "On 13 March, 2023, Jolene asked Deb for help with her Engineering assignments, expressing that she was struggling to keep up and wanted to talk about time management.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What method does Deb suggest Jolene to try for organizing tasks based on importance and urgency?",
+      "ground_truth": "The Eisenhower Matrix",
+      "generated_answer": "Deb suggests Jolene try the Eisenhower Matrix for organizing tasks based on their urgency and importance.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+      "ground_truth": "They realized they inspire each other",
+      "generated_answer": "While watching the sunset by the sea, Jolene and Anna discussed each other and realized the importance of their connection.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Jolene plan to pursue her dream of learning to surf?",
+      "ground_truth": "gathering information, watching videos, getting a beginners' guide",
+      "generated_answer": "Jolene plans to pursue her dream of learning to surf by gathering information, watching videos, and obtaining a beginners' guide to surfing. She is also looking for the right time and place to get a lesson.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Deborah buy to enhance her yoga practice besides the props?",
+      "ground_truth": "candle",
+      "generated_answer": "Deborah bought a candle and essential oils to enhance her yoga practice besides the props.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of music does Deborah find helpful during her yoga practice?",
+      "ground_truth": "instrumental tracks with mellow melodies and rhythms",
+      "generated_answer": "Deborah finds instrumental tracks with mellow melodies and rhythms helpful during her yoga practice. One of her favorites is a track called \"Savana,\" and she also listens to an album called 'Sleep' for meditation and deep relaxation.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who are the musicians mentioned by Jolene that she enjoys listening to during her yoga practice?",
+      "ground_truth": "Nils Frahm and Olafur Arnalds",
+      "generated_answer": "Jolene enjoys listening to Nils Frahm and Olafur Arnalds during her yoga practice.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What album does Deborah recommend for meditation and deep relaxation?",
+      "ground_truth": "'Sleep'",
+      "generated_answer": "Deborah recommends the album 'Sleep' for meditation and deep relaxation.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which show did Deborah go to with a friend on 9 April, 2023?",
+      "ground_truth": "an art show",
+      "generated_answer": "Deborah went to an art show with a friend on 9 April 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Deborah find comforting about going to art shows?",
+      "ground_truth": "It makes her feel like she's still experiencing it with her mom",
+      "generated_answer": "Deborah finds comfort in going to art shows because it allows her to feel her mother's presence and keeps her memory alive, connecting her to the strong emotions and experiences they shared.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Jolene describe the time spent with her snakes and partner?",
+      "ground_truth": "Valuable and relaxing",
+      "generated_answer": "Jolene describes her time with her snakes as valuable and calming, teaching her to be in tune with herself. She also finds spending time with her partner to be refreshing and a great way to relax, as they share experiences that help alleviate stress.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Jolene enjoy doing with her partner after a long day?",
+      "ground_truth": "Playing video games",
+      "generated_answer": "Jolene enjoys playing video games with her partner after a long day, specifically mentioning that they love playing \"It Takes Two\" together, which helps them bond. They also take little trips to the beach to relax.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is Jolene currently doing in June 2023?",
+      "ground_truth": "interning at a well-known engineering firm",
+      "generated_answer": "In June 2023, Jolene is pushing herself to succeed and managing a hectic schedule with her internship. She is also engaging in activities like yoga, spending time with her pet, and focusing on her goals.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "For how long has Jolene had Seraphim as a pet?",
+      "ground_truth": "one year",
+      "generated_answer": "Jolene has had Seraphim as a pet since 2021, as she mentioned adopting her two years ago from the dialog date of 23 January, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Jolene feel when spending time with Seraphim?",
+      "ground_truth": "comforted",
+      "generated_answer": "Jolene feels a sense of peace and comfort when spending time with Seraphim. She describes their time together as valuable, bringing her love and gratitude, and teaching her to be in tune with herself.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which new yoga pose did Deborah share a photo of?",
+      "ground_truth": "tree pose",
+      "generated_answer": "Deborah shared a photo of a new yoga pose called the Dancer Pose (Natarajasana).",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What group activity did Deborah start with Anna?",
+      "ground_truth": "running group",
+      "generated_answer": "Deborah started a running group with Anna.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What made being part of the running group easy for Deborah to stay motivated?",
+      "ground_truth": "helping and pushing each other during runs",
+      "generated_answer": "Being part of the running group made it easy for Deborah to stay motivated because they help and push each other during their runs, creating a supportive community that encourages motivation and connection.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Jolene decide to get a snake as a pet?",
+      "ground_truth": "fascinated by reptiles and it felt like the perfect pet",
+      "generated_answer": "Jolene decided to get a snake as a pet because she was fascinated by reptiles, and it felt like the perfect pet for her. Taking care of the snake has been calming and a great way for her to connect with nature.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is the favorite game Jolene plays with her partner?",
+      "ground_truth": "It takes two",
+      "generated_answer": "Jolene's favorite game to play with her partner is \"It Takes Two,\" which is a fun team-strategy game. They also enjoy playing \"Overcooked 2\" and \"Detroit.\"",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity does Deborah do with her cats?",
+      "ground_truth": "take them out for a run in the park every morning and evening",
+      "generated_answer": "Deborah takes her cats out for a run in the park every morning and evening. She also enjoys playing detective games with them.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Jolene describe the feeling of finding her snake snuggled under the bed after it got out?",
+      "ground_truth": "It really showed how much she loves her.",
+      "generated_answer": "Jolene describes feeling a mix of love and gratitude when she found her snake snuggled under the bed, realizing how important the snake is to her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why does Deborah take her cats out for a run in the park every day?",
+      "ground_truth": "Exercise and nature are important to her",
+      "generated_answer": "Deborah takes her cats out for a run in the park every day because exercise and nature are important to her, helping her find peace and stay connected to her body.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Jolene come to have her pet, Susie?",
+      "ground_truth": "She adopted her two years ago when feeling lonely.",
+      "generated_answer": "Jolene adopted Susie two years ago when she was feeling lonely and wanted some company. She was fascinated by reptiles, which made Susie the perfect pet for her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activities have been helping Jolene stay distracted during tough times?",
+      "ground_truth": "Video games and spending time with her pet, Susie",
+      "generated_answer": "Jolene has been staying distracted during tough times by spending time with her pets, playing video games, practicing yoga and meditation, and maintaining a routine for her classes and personal time.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of yoga routine does Deborah recommend to Jolene?",
+      "ground_truth": "A gentle flow routine focused on breathing and grounding",
+      "generated_answer": "Deborah recommends a gentle flow yoga routine focused on breathing and grounding, which helps her find balance and peace. She also suggests practicing mindful breathing by setting aside a few minutes each day for deep breathing.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Jolene design inspired by their love for space and engines?",
+      "ground_truth": "Notebooks",
+      "generated_answer": "Jolene designed notebooks inspired by her love for space and engines, incorporating elements like galaxies and circuitry.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What journal has Jolene been using to help track tasks and stay organized?",
+      "ground_truth": "bullet journal",
+      "generated_answer": "Jolene has been using a bullet journal to help track tasks and stay organized.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What game did Jolene recommend for being calming and cute?",
+      "ground_truth": "Animal Crossing: New Horizons",
+      "generated_answer": "Jolene recommended \"Animal Crossing: New Horizons\" for being calming and cute.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+      "ground_truth": "Zelda BOTW",
+      "generated_answer": "Jolene suggested \"Zelda BOTW\" (The Legend of Zelda: Breath of the Wild) as an awesome open-world game for the Nintendo Switch.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Deborah and her husband use to play to bond and make memories?",
+      "ground_truth": "video games",
+      "generated_answer": "Deborah and her husband used to play games, specifically detective games, to bond and make memories together.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is special about the bench at the park near Deborah's house?",
+      "ground_truth": "It holds special memories of conversations with her mom",
+      "generated_answer": "The bench at the park near Deborah's house is special because it holds many memories of her time spent with her mom, where they would chat about dreams and life, making it a comforting place for her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Deborah and her mom chat about at their special bench in the park?",
+      "ground_truth": "dreams and life",
+      "generated_answer": "Deborah and her mom chatted about dreams, life, and shared special moments at their special bench in the park. They also discussed her mom's love for art and flowers, and how those simple things brought happiness.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What feeling does Deborah get when she thinks about the time spent with her mom at their special spot?",
+      "ground_truth": "peace and gratitude",
+      "generated_answer": "Deborah feels a mix of nostalgia, longing, and gratitude when she thinks about the time spent with her mom at their special spot. She cherishes the memories and finds comfort in recalling their moments together.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What habits does Jolene practice to feel balanced?",
+      "ground_truth": "yoga, meditation, walks, and mindfulness",
+      "generated_answer": "Jolene practices yoga and meditation to feel balanced, prioritizing self-care activities and creating a serene environment with candles and essential oils. She also incorporates breathing exercises and takes breaks when overwhelmed to maintain calmness.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which yoga pose is Jolene a fan of for rest and calmness?",
+      "ground_truth": "savasana (the corpse pose)",
+      "generated_answer": "Jolene is a fan of savasana, also known as the corpse pose, for rest and calmness.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long has Jolene been doing yoga?",
+      "ground_truth": "3 years",
+      "generated_answer": "Jolene has been doing yoga for about 3 years as of the dialog date, 23 January 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Jolene participate in recently that provided her with a rewarding experience?",
+      "ground_truth": "presenting at a virtual conference",
+      "generated_answer": "Jolene recently participated in a meditation retreat with her partner, which she described as an amazing experience filled with nature and reflection.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How did Jolene feel after receiving positive feedback at the virtual conference?",
+      "ground_truth": "thrilled and rewarded",
+      "generated_answer": "Jolene felt thrilled and rewarded after receiving positive feedback at the virtual conference, as it made her feel that her efforts were appreciated.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of event did Jolene present at recently?",
+      "ground_truth": "virtual conference",
+      "generated_answer": "Jolene recently had the opportunity to present at a workshop, although the specific details of the event are not provided in the context.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Jolene's mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "ground_truth": "Helping others",
+      "generated_answer": "Jolene's mom stressed the value of perseverance and resilience, emphasizing the importance of never giving up, which Jolene wants to keep in mind for her engineering projects.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What type of projects is Jolene interested in getting involved in the future?",
+      "ground_truth": "Sustainable initiatives and developing innovative solutions for environmental issues",
+      "generated_answer": "Jolene is interested in working on projects that focus on sustainable initiatives, developing renewable energy solutions, and supplying clean water to communities with limited access. She aims to make a positive impact on communities through engineering and green technology.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Deborah get Luna, one of her cats?",
+      "ground_truth": "From the shelter",
+      "generated_answer": "Deborah got Luna from the shelter.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How old is Max?",
+      "ground_truth": "8 years old",
+      "generated_answer": "Max is 8 years old as of 23 January 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of classes did Jolene and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "ground_truth": "Yoga classes",
+      "generated_answer": "Jolene and her partner checked out some cool yoga classes during their trip to Rio de Janeiro on 30 August 2023. They experienced different kinds of yoga and learned about their backgrounds.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of place does Jolene visit to meditate?",
+      "ground_truth": "A tranquil spot by a pond",
+      "generated_answer": "Jolene visits a meditation retreat, specifically one in Phuket, and also creates her own serene yoga space with candles and oils for meditation.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the new plant Jolene got used as a reminder for on 30 August, 2023?",
+      "ground_truth": "To nurture herself and embrace fresh starts",
+      "generated_answer": "Jolene got a new plant as a reminder to nurture herself and embrace fresh starts on 30 August, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Jolene get the new plant on 30 August, 2023?",
+      "ground_truth": "As a reminder to nurture herself and embrace fresh starts",
+      "generated_answer": "Jolene got the new plant on 30 August 2023 as a reminder to nurture herself and embrace fresh starts.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What has Jolene been focusing on lately besides studying?",
+      "ground_truth": "relationship with her partner",
+      "generated_answer": "Lately, Jolene has been focusing on yoga and meditation, as well as spending time with her partner, including taking little trips to the beach.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Deborah's mom support her yoga practice when she first started?",
+      "ground_truth": "attended classes with her",
+      "generated_answer": "Deborah's mom supported her yoga practice by being interested in her activities and providing a nurturing environment, as indicated by Deborah's reflections on their relationship and her mom's appreciation for simple joys. Additionally, Deborah mentioned attending a yoga retreat near her mom's place on 17 August 2023, suggesting her mom's presence in her yoga journey.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the video game console that Jolene's parents got her at age 10?",
+      "ground_truth": "nintendo game console",
+      "generated_answer": "The specific video game console that Jolene's parents got her at age 10 is not mentioned in the provided context.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What was one of Jolene's favorite games to play with her mom on the nintendo wii game system?",
+      "ground_truth": "Monster Hunter: World",
+      "generated_answer": "One of Jolene's favorite games to play with her mom on the Nintendo Wii was \"It Takes Two,\" as she mentioned enjoying it as a fun team-strategy game that allowed them to bond.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What course did Jolene sign up for on 6 September 2023?",
+      "ground_truth": "meditation",
+      "generated_answer": "Jolene signed up for a meditation course at a retreat near a lake on 6 September 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Jolene have to reschedule their meeting with Deborah on September 8, 2023?",
+      "ground_truth": "Jolene already had plans",
+      "generated_answer": "Jolene had to reschedule their meeting with Deborah on September 8, 2023, because Deborah mentioned having a tough week and that a storm forced them to cancel their yoga getaway.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Where did Jolene and her partner travel for a few weeks in September 2023?",
+      "ground_truth": "Phuket",
+      "generated_answer": "Jolene and her partner traveled to a meditation retreat in Phuket for a few weeks in September 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the main focus of the session that stood out to Jolene during the retreat?",
+      "ground_truth": "releasing expectations and judgments and savoring the present",
+      "generated_answer": "The main focus of the session that stood out to Jolene during the retreat was about releasing expectations and judgments and savoring the present.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Jolene feel about her progress in practicing mindfulness and gratitude?",
+      "ground_truth": "experiencing a new level of joy and happiness",
+      "generated_answer": "Jolene felt a sense of love and gratitude, especially when reflecting on her experiences, such as seeing her pet. She expressed that practicing mindfulness and gratitude has helped her feel peaceful, connected to nature, and more appreciative of the small joys in life.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What positive change did Jolene experience during the retreat?",
+      "ground_truth": "finding inner peace",
+      "generated_answer": "During the retreat, Jolene experienced a positive change by realizing the importance of incorporating relaxation, self-care, and balance in her life alongside her engineering studies. She also mentioned feeling a new level of joy and happiness.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Jolene recently play that she described to Deb?",
+      "ground_truth": "a card game about cats",
+      "generated_answer": "Jolene recently played \"Detroit\" on January 20, 2023, and described it as a fun activity she enjoys with her partner.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Deborah do with their mom's old friends?",
+      "ground_truth": "reminisced and looked through photos",
+      "generated_answer": "Deborah reconnected with her mom's old friends, which made her emotional as their stories reminded her of her mother and made her feel lucky to have had her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Deborah get married?",
+      "ground_truth": "on the beach",
+      "generated_answer": "Deborah got married at a beach that is special to her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does yoga on the beach provide for Deborah?",
+      "ground_truth": "a peaceful atmosphere",
+      "generated_answer": "Yoga on the beach provides Deborah with a peaceful and relaxing atmosphere, enhanced by the ocean, sand, and fresh air, which she finds to be a perfect way to take care of herself.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Jolene describe their home room?",
+      "ground_truth": "little haven for peace and rest",
+      "generated_answer": "Jolene describes her room as a little haven for peace and rest, where she goes to relax and recharge after a busy day. She also creates a serene space with soothing scents like lavender and rosemary.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new activity did Deborah and her neighbor organize for the community on 16 September, 2023?",
+      "ground_truth": "Free gardening class",
+      "generated_answer": "On 16 September 2023, Deborah and her neighbor organized a free gardening class for the community.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was Deborah's mom passionate about?",
+      "ground_truth": "Cooking",
+      "generated_answer": "Deborah's mom was passionate about cooking, art, travel, and flowers.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What food did Deborah's mom make for her on birthdays?",
+      "ground_truth": "Pineapple cakes",
+      "generated_answer": "Deborah's mom made pineapple birthday cakes for her on birthdays.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of cookies did Jolene used to bake with someone close to her?",
+      "ground_truth": "Chocolate chip cookies",
+      "generated_answer": "Jolene used to bake warm, gooey chocolate cookies with someone close to her.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What outdoor activity did Jolene suggest doing together with Deborah?",
+      "ground_truth": "Surfing",
+      "generated_answer": "Jolene suggested going camping together with Deborah to connect with nature and practice yoga.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What activity did Deborah enjoy at the music festival with their pals on September 20, 2023?",
+      "ground_truth": "Dancing and bopping around",
+      "generated_answer": "Deborah enjoyed dancing and bopping around with her pals at the music festival on September 20, 2023. She described the vibes as unreal and the music as magical.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Deborah find freeing at the music festival?",
+      "ground_truth": "Dancing and bopping around",
+      "generated_answer": "Deborah found it freeing to dance and bop around at the music festival, enjoying the unreal vibes and magical music.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    }
+  ],
+  "summary": {
+    "pipeline": "VAC Memory System v1",
+    "architecture": [
+      "1. Query Classification",
+      "2. LLM Synonym Expansion (qwen2.5:14b)",
+      "3. [TARGET] MCA-first filter",
+      "4. [TARGET] FAISS top-k (semantic, BGE-large 1024D)",
+      "5. [TARGET] BM25 top-k (sparse)",
+      "6. Union(MCA, FAISS, BM25) -> ~112 docs",
+      "7. [FIRE] Cross-Encoder DIRECT reranking (ALL ~112 docs -> top-15)",
+      "8. gpt-4o-mini answer (T=0.0, max_tokens=150)   MEM0 OFFICIAL!"
+    ],
+    "embedding_model": "bge-large-en-v1.5",
+    "embedding_dim": 1024
+  }
+}

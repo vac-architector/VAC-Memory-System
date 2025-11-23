@@ -1,0 +1,2 @@
+EMBEDDING_MODEL = 'nomic-embed-text'
+EMBEDDING_DIM = 768

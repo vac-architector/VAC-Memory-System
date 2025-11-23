@@ -1,0 +1,1668 @@
+{
+  "source_file": "/mnt/d/LoCoMo_SOTA_v4.64/results/baseline_100runs_20251120/v4.64_union_direct_ce_20251120_202750.json",
+  "judge_model": "gpt-4o-mini (GENEROUS - Mem0 official)",
+  "judge_prompt": "ACCURACY_PROMPT (generous grading)",
+  "filter": "Cat1-4 only (no adversarial Cat5)",
+  "llm_judge_accuracy": 0.7584269662921348,
+  "llm_judge_correct": 135,
+  "llm_judge_total": 178,
+  "category_breakdown": {
+    "1": {
+      "correct": 25,
+      "total": 31
+    },
+    "3": {
+      "correct": 5,
+      "total": 14
+    },
+    "2": {
+      "correct": 10,
+      "total": 26
+    },
+    "4": {
+      "correct": 95,
+      "total": 107
+    }
+  },
+  "category_breakdown_named": {
+    "1": {
+      "correct": 25,
+      "total": 31,
+      "label": "Single-hop (Factual)"
+    },
+    "3": {
+      "correct": 5,
+      "total": 14,
+      "label": "Multi-hop"
+    },
+    "2": {
+      "correct": 10,
+      "total": 26,
+      "label": "Temporal"
+    },
+    "4": {
+      "correct": 95,
+      "total": 107,
+      "label": "Commonsense"
+    }
+  },
+  "judge_results": [
+    {
+      "question": "what are John's goals with regards to his basketball career?",
+      "ground_truth": "improve shooting percentage, win a championship",
+      "generated_answer": "John's goals for his basketball career include winning a championship, improving his shooting percentage, being known as a consistent performer, and making a positive impact off the court through charity and inspiration.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What are John's goals for his career that are not related to his basketball skills?",
+      "ground_truth": "get endorsements, build his brand, do charity work",
+      "generated_answer": "John's career goals not related to his basketball skills include making a positive difference through charity work, inspiring others, and potentially starting a foundation. He also aims to improve his marketing skills and boost his personal brand.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What items does John collect?",
+      "ground_truth": "sneakers, fantasy movie DVDs, jerseys",
+      "generated_answer": "John collects jerseys and sneakers.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Would Tim enjoy reading books by C. S. Lewis or John Greene?",
+      "ground_truth": "C. S.Lewis",
+      "generated_answer": "Tim enjoys reading fantasy novels and books on personal growth and psychology, which suggests he would likely enjoy reading books by C. S. Lewis, known for his fantasy works, and John Green, who often explores themes of personal growth.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What books has Tim read?",
+      "ground_truth": "Harry Potter, Game of Thrones, the Name of the Wind, The Alchemist, The Hobbit, A Dance with Dragons, and the Wheel of Time.",
+      "generated_answer": "Tim has read \"The Hobbit,\" \"Harry Potter,\" and \"Game of Thrones.\" He is currently reading \"The Name of the Wind\" by Patrick Rothfuss.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Based on Tim's collections, what is a shop that he would enjoy visiting in New York city?",
+      "ground_truth": "House of MinaLima",
+      "generated_answer": "Based on Tim's love for books, he would enjoy visiting a bookstore in New York City, such as The Strand Bookstore, known for its vast collection of new and used books.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "In which month's game did John achieve a career-high score in points?",
+      "ground_truth": "June 2023",
+      "generated_answer": "John achieved a career-high score of 40 points in July 2023, specifically on 9 July 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which geographical locations has Tim been to?",
+      "ground_truth": "California, London, the Smoky Mountains",
+      "generated_answer": "Tim has been to London, the Smoky Mountains, and attended a Harry Potter conference in the UK on 6 October 2023. He also plans to visit Italy, The Cliffs of Moher, Edinburgh, Chicago, New York City, and Barcelona.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+      "ground_truth": "Under Armour",
+      "generated_answer": "John likely signed up with a renowned outdoor gear company on 12 December 2023.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which endorsement deals has John been offered?",
+      "ground_truth": "basketball shoes and gear deal with Nike, potential sponsorship with Gatorade, Moxie a popular beverage company, outdoor gear company",
+      "generated_answer": "John has been offered endorsement deals with Nike and Gatorade, and he signed a deal with Nike for a basketball shoe and gear. He also mentioned a deal with a renowned outdoor gear company on 12 December 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When was John in Seattle for a game?",
+      "ground_truth": "early August, 2023",
+      "generated_answer": "John was in Seattle for a game in June 2023, as he mentioned being excited for a game there \"next month\" from the dialog date of 21 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What sports does John like besides basketball?",
+      "ground_truth": "surfing",
+      "generated_answer": "I don't have information on what sports John likes besides basketball.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What year did John start surfing?",
+      "ground_truth": "2018",
+      "generated_answer": "John started surfing in 2018, as he mentioned he began five years ago from the current date of 21 May 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Tim do to escape reality?",
+      "ground_truth": "Read fantasy books.",
+      "generated_answer": "Tim escapes reality by going on road trips, exploring, hiking, playing board games, and curling up with good books, particularly fantasy books, which allow him to get lost in alternate realities. He also enjoys watching movies and having movie marathons with friends.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of writing does Tim do?",
+      "ground_truth": "comments on favorite books in a fantasy literature forum, articles on fantasy novels, studying characters, themes, and making book recommendations, writing a fantasy novel",
+      "generated_answer": "Tim writes articles about fantasy novels, studying characters and themes, and he also makes book recommendations. He is currently in the middle of writing a fantasy novel.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who is Anthony?",
+      "ground_truth": "likely John's friend, colleague or family",
+      "generated_answer": "Anthony is a person who participated in a charity event with John, where they took part in a Harry Potter trivia contest.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "After how many weeks did Tim reconnect with the fellow Harry Potter fan from California?",
+      "ground_truth": "three weeks",
+      "generated_answer": "Tim reconnected with the fellow Harry Potter fan from California on 9 July 2023, after approximately 7 weeks from his initial chat on 14 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How many games has John mentioned winning?",
+      "ground_truth": "6",
+      "generated_answer": "John has mentioned winning in several contexts, including a championship goal, a game on 9 December 2023, and a close game on 2 August 2023. He also referred to winning in a game where they overturned a deficit and in a game that was close but they made it. Overall, he has indicated multiple wins but does not specify an exact number.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What authors has Tim read books from?",
+      "ground_truth": "J.K. Rowling, R.R. Martin, Patrick Rothfuss, Paulo Coelho, and J. R. R. Tolkien.",
+      "generated_answer": "Tim has read books by J.K. Rowling and Patrick Rothfuss. He has mentioned enjoying the Harry Potter series and is currently reading \"The Name of the Wind\" by Rothfuss.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is a prominent charity organization that John might want to work with and why?",
+      "ground_truth": "Good Sports, because they work with Nike, Gatorade, and Under Armour and they aim toprovide youth sports opportunities for kids ages 3-18 in high-need communities.",
+      "generated_answer": "A prominent charity organization that John might want to work with is one that helps disadvantaged kids with sports and education, as he is currently teaming up with a local organization focused on these areas. He aims to use his platform to inspire and make a positive impact in the community.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which city was John in before traveling to Chicago?",
+      "ground_truth": "Seattle",
+      "generated_answer": "John was in Seattle before traveling to Chicago.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which US cities does John mention visiting to Tim?",
+      "ground_truth": "Seattle, Chicago, New York",
+      "generated_answer": "John mentions visiting New York, Seattle, and Chicago to Tim.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John meet with his teammates after returning from Chicago?",
+      "ground_truth": "August 15, 2023",
+      "generated_answer": "John met with his teammates on the 15th of May, 2023, after returning from Chicago.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When is Tim attending a book conference?",
+      "ground_truth": "September 2023",
+      "generated_answer": "Tim is hoping to attend a book conference in June 2023, as he mentioned on 21 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Where was John between August 11 and August 15 2023?",
+      "ground_truth": "Chicago",
+      "generated_answer": "John was in Chicago between August 11 and August 15, 2023. He mentioned enjoying the energy of the city on August 11, 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What similar sports collectible do Tim and John own?",
+      "ground_truth": "signed basketball",
+      "generated_answer": "Tim and John both own sports jerseys, as John mentioned he likes to collect them.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which TV series does Tim mention watching?",
+      "ground_truth": "That, Wheel of Time",
+      "generated_answer": "Tim mentions watching \"Harry Potter,\" \"Game of Thrones,\" and is excited about the new show \"The Wheel of Time.\"",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which popular time management technique does Tim use to prepare for exams?",
+      "ground_truth": "Pomodoro technique",
+      "generated_answer": "Tim uses the Pomodoro Technique to prepare for exams, which involves studying for 25 minutes followed by a 5-minute break.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which popular music composer's tunes does Tim enjoy playing on the piano?",
+      "ground_truth": "John Williams",
+      "generated_answer": "Tim enjoys playing tunes from classical music, jazz, and film scores on the piano, particularly a theme from a movie he enjoys.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What schools did John play basketball in and how many years was he with his team during high school?",
+      "ground_truth": "Middle school, high school, and college and he was with his high school team for 4 years.",
+      "generated_answer": "John played basketball for four years during high school. The specific schools he played for are not mentioned in the provided context.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which cities has John been to?",
+      "ground_truth": "Seattle, Chicago, New York, and Paris.",
+      "generated_answer": "John has been to Barcelona, Chicago, New York City (NYC), and Italy. He has also mentioned wanting to visit Edinburgh and has plans for a trip to Seattle.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What month did Tim plan on going to Universal Studios?",
+      "ground_truth": "September, 2023",
+      "generated_answer": "Tim planned on going to Universal Studios in June 2023, as he mentioned he was planning a trip there \"next month\" from the dialog date of 21 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+      "ground_truth": "California or Florida",
+      "generated_answer": "Tim might be in California during September 2023, as he had a chat with a Harry Potter fan there on 9 July 2023, and he is planning to visit Universal Studios, which is located in California. Additionally, he mentioned adding NYC to his travel list, so he could also be in New York.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When does John plan on traveling with his team on a team trip?",
+      "ground_truth": "October, 2023",
+      "generated_answer": "John plans on traveling with his team on a trip in June 2023, as he mentioned they are planning to take the trip next month from May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What could John do after his basketball career?",
+      "ground_truth": "become a basketball coach since he likes giving back and leadership",
+      "generated_answer": "After his basketball career, John could start a foundation and engage in charity work to make a positive difference and inspire others. He is also interested in supporting youth sports and ensuring access to good sports programs for underserved communities.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What outdoor activities does John enjoy?",
+      "ground_truth": "Hiking, surfing",
+      "generated_answer": "John enjoys surfing, hiking, camping, and spending time outdoors in nature. He finds these activities refreshing and peaceful, often appreciating the beauty of the natural environment.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who is Tim and John's favorite basketball player?",
+      "ground_truth": "LeBron James",
+      "generated_answer": "Tim and John's favorite basketball player is LeBron James.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+      "ground_truth": "The week before October 13th, 2023.",
+      "generated_answer": "Tim visited the UK for the Harry Potter Conference on 6 October 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "which country has Tim visited most frequently in his travels?",
+      "ground_truth": "UK",
+      "generated_answer": "Tim has frequently mentioned traveling to the UK, specifically referencing trips to Edinburgh and attending a Harry Potter conference there.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What year did Tim go to the Smoky Mountains?",
+      "ground_truth": "2022",
+      "generated_answer": "Tim went to the Smoky Mountains in 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+      "ground_truth": "Yes",
+      "generated_answer": "The memory context does not provide any information indicating that Tim has been to North Carolina or Tennessee.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of fiction stories does Tim write?",
+      "ground_truth": "Fantasy stories with plot twists",
+      "generated_answer": "Tim writes fantasy novels, focusing on epic adventures and magical worlds. He enjoys exploring different characters and themes within this genre.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What has John cooked?",
+      "ground_truth": "Soup, a slow cooker meal, and honey garlic chicken with roasted veg.",
+      "generated_answer": "John has cooked honey garlic chicken with roasted vegetables and a tasty soup.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John like about Lebron James?",
+      "ground_truth": "His heart, determination, skills, and leadership.",
+      "generated_answer": "John likes LeBron James for his moments of determination and heart, his skills and leadership, as well as his work ethic and dedication to the game, which he finds inspiring.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John and his wife go on a European vacation?",
+      "ground_truth": "November, 2023.",
+      "generated_answer": "John and his wife left for their European vacation on 21 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which country was Tim visiting in the second week of November?",
+      "ground_truth": "UK",
+      "generated_answer": "Tim was visiting the UK in the second week of November 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where was Tim in the week before 16 November 2023?",
+      "ground_truth": "UK",
+      "generated_answer": "Tim was in the UK during the week before 16 November 2023, as he mentioned visiting a castle there on 10 November 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John get married at a greenhouse?",
+      "ground_truth": "last week of September 2023",
+      "generated_answer": "John got married at a greenhouse on 25 September 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John get an ankle injury in 2023?",
+      "ground_truth": "around November 16, 2023",
+      "generated_answer": "John got his ankle injury on 2 August 2023.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How many times has John injured his ankle?",
+      "ground_truth": "two times",
+      "generated_answer": "John has injured his ankle at least twice: once last season, which required physical therapy, and again not long ago, which caused him to miss some games.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which book was John reading during his recovery from an ankle injury?",
+      "ground_truth": "The Alchemist",
+      "generated_answer": "John was reading \"Dune\" by Frank Herbert during his recovery from an ankle injury.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of yoga for building core strength might John benefit from?",
+      "ground_truth": "Hatha Yoga",
+      "generated_answer": "John might benefit from yoga poses that focus on core strength, such as Warrior II, which he enjoys and finds helps with strength and stability. Additionally, poses that challenge the body and mind can also contribute to building core strength.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What does John do to supplement his basketball training?",
+      "ground_truth": "Yoga, strength training",
+      "generated_answer": "John supplements his basketball training with strength training, which helps him build muscle, increase power, and prevent injuries. He has also found a new gym to stay fit and improve his basketball skills.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What other exercises can help John with his basketball performance?",
+      "ground_truth": "Sprinting, long-distance running, and boxing.",
+      "generated_answer": "To help improve his basketball performance, John can incorporate strength training, yoga for flexibility and focus, and ensure he balances his workouts with adequate rest.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did John take a trip to the Rocky Mountains?",
+      "ground_truth": "2022",
+      "generated_answer": "John took a trip to the Rocky Mountains in 2022.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John start playing professionally?",
+      "ground_truth": "May, 2023",
+      "generated_answer": "John started playing professionally around 21 May 2022, as he mentioned he has been playing professionally for just under a year as of 21 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Tim start playing the violin?",
+      "ground_truth": "August 2023",
+      "generated_answer": "Tim started playing the violin around January 2023, as he mentioned he had been playing for about four months as of May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What instruments does Tim play?",
+      "ground_truth": "piano, violin",
+      "generated_answer": "Tim plays the violin and the piano. He is currently learning the violin and enjoys playing different songs on the piano, particularly a theme from a movie he likes.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John attend the Harry Potter trivia?",
+      "ground_truth": "August 2023.",
+      "generated_answer": "John attended the Harry Potter trivia contest at a charity event in August 2022.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which career-high performances did John achieve in 2023?",
+      "ground_truth": "highest point score, highest assist",
+      "generated_answer": "In 2023, John achieved a career-high of 40 points on 9 July and a career-high in assists on 8 December.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John achieve a career-high assist performance?",
+      "ground_truth": "December 11, 2023",
+      "generated_answer": "John achieved a career-high in assists on 8 December 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What books has John read?",
+      "ground_truth": "inpsiring book on dreaming big, The Alchemist, fantasy series, non-fiction books on personal development, Dune",
+      "generated_answer": "John has read \"Dune\" by Frank Herbert, \"The Alchemist,\" \"The Hobbit,\" and is a fan of \"Lord of the Rings.\" He also enjoys non-fiction books about personal development and mindset.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John do to share his knowledge?",
+      "ground_truth": "gives seminars, mentors younger players.",
+      "generated_answer": "John shares his knowledge by mentoring younger players on his team, conducting seminars for aspiring professors, and using his platform to inspire and support youth sports, particularly for underserved communities.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John organize a basketball camp for kids?",
+      "ground_truth": "summer 2023",
+      "generated_answer": "John organized a basketball camp for kids in his hometown during the summer of 2022.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which month was John in Italy?",
+      "ground_truth": "December, 2023",
+      "generated_answer": "John was in Italy in December 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What fantasy movies does Tim like?",
+      "ground_truth": "Lord of the Rings, Harry Potter, and Star Wars.",
+      "generated_answer": "Tim likes the following fantasy movies: Star Wars, Harry Potter (specifically \"Harry Potter and the Philosopher's Stone\"), The Hobbit, and Lord of the Rings. He is also a fan of the Game of Thrones series.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is a Star Wars book that Tim might enjoy?",
+      "ground_truth": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+      "generated_answer": "Tim might enjoy \"Star Wars\" books, as he has expressed that Star Wars is his favorite and never gets old.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+      "ground_truth": "Writing a travel blog.",
+      "generated_answer": "A good hobby for Tim to pick up related to his travel dreams would be joining a travel club, as he has already done, or learning about different cultures and countries, which he finds exciting. Additionally, he could continue exploring his interest in reading, particularly fantasy novels that inspire his travel aspirations.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What day did Tim get into his study abroad program?",
+      "ground_truth": "Januarty 5, 2024",
+      "generated_answer": "Tim got into his study abroad program on Friday, 19 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When will Tim leave for Ireland?",
+      "ground_truth": "February, 2024",
+      "generated_answer": "Tim will leave for Ireland on 1 June 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+      "ground_truth": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
+      "generated_answer": "Tim would enjoy visiting The Cliffs of Moher in Ireland, as he mentioned wanting to see the amazing ocean views and cliffs. Additionally, he expressed a love for castles, which are also prevalent in Ireland.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which team did John sign with on 21 May, 2023?",
+      "ground_truth": "The Minnesota Wolves",
+      "generated_answer": "John signed with the Minnesota Wolves on 21 May 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is John's position on the team he signed with?",
+      "ground_truth": "shooting guard",
+      "generated_answer": "John is a shooting guard for the Minnesota Wolves.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What challenge did John encounter during pre-season training?",
+      "ground_truth": "fitting into the new team's style of play",
+      "generated_answer": "John encountered the challenge of fitting into the new team's style of play during pre-season training.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+      "ground_truth": "characters, spells, magical creatures",
+      "generated_answer": "John's fan project collaborations will discuss various aspects of the Harry Potter universe, including characters, spells, and magical creatures.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What forum did Tim join recently?",
+      "ground_truth": "fantasy literature forum",
+      "generated_answer": "Tim recently joined a fantasy literature forum.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of picture did Tim share as part of their Harry Potter book collection?",
+      "ground_truth": "MinaLima's creation from the Harry Potter films",
+      "generated_answer": "Tim shared a picture from MinaLima, the creators of the props for the Harry Potter films, expressing that it feels like having a piece of the wizarding world at home.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the highest number of points John scored in a game recently?",
+      "ground_truth": "40 points",
+      "generated_answer": "John scored his highest ever points, 40, in a game on 9 July 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John celebrate at a restaurant with teammates?",
+      "ground_truth": "a tough win",
+      "generated_answer": "John celebrated a tough win at a restaurant with his teammates, reliving intense moments and feeling amazing about the victory.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of deals did John sign with Nike and Gatorade?",
+      "ground_truth": "basketball shoe and gear deal with Nike, potential sponsorship deal with Gatorade",
+      "generated_answer": "John signed a deal with Nike for a basketball shoe and gear, and he is in talks with Gatorade about a potential sponsorship.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which city is John excited to have a game at?",
+      "ground_truth": "Seattle",
+      "generated_answer": "John is excited to have a game in Seattle next month, which is June 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long has John been surfing?",
+      "ground_truth": "five years",
+      "generated_answer": "John has been surfing for five years as of 21 May 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does John feel while surfing?",
+      "ground_truth": "super exciting and free-feeling",
+      "generated_answer": "John feels an incredible sense of excitement and freedom while surfing, describing it as an \"unreal\" feeling and noting the amazing connection to nature.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of articles has Tim been writing about for the online magazine?",
+      "ground_truth": "different fantasy novels, characters, themes, and book recommendations",
+      "generated_answer": "Tim has been writing articles about fantasy novels, studying characters, themes, and making book recommendations. He is also discussing various aspects of the Harry Potter universe, including characters, spells, and magical creatures.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which two fantasy novels does Tim particularly enjoy writing about?",
+      "ground_truth": "Harry Potter and Game of Thrones",
+      "generated_answer": "Tim particularly enjoys writing about \"Harry Potter\" and \"Game of Thrones.\"",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Anthony and John end up playing during the charity event?",
+      "ground_truth": "an intense Harry Potter trivia contest",
+      "generated_answer": "Anthony and John ended up playing in an intense Harry Potter trivia contest during the charity event.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John share with the person he skyped about?",
+      "ground_truth": "Characters from Harry Potter",
+      "generated_answer": "John skyped with a Harry Potter fan and they talked about characters and the possibility of collaborating.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John describe the team bond?",
+      "ground_truth": "Awesome",
+      "generated_answer": "John described the team bond as awesome, emphasizing that it makes hard work worthwhile. He mentioned that being surrounded by passionate teammates creates a strong bond, and he views his team as a second family that brings him happiness and support.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John get introduced to basketball?",
+      "ground_truth": "Dad signed him up for a local league",
+      "generated_answer": "John got introduced to basketball as a kid when he would watch NBA games with his dad, dreaming of playing on big courts. When he turned ten, his dad signed him up for a local league.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is John's number one goal in his basketball career?",
+      "ground_truth": "Winning a championship",
+      "generated_answer": "John's number one goal in his basketball career is winning a championship.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What organization is John teaming up with for his charity work?",
+      "ground_truth": "A local organization helping disadvantaged kids with sports and school",
+      "generated_answer": "John is teaming up with a local organization that helps disadvantaged kids with sports and school.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did John meet back up with his teammates after his trip in August 2023?",
+      "ground_truth": "Aug 15th",
+      "generated_answer": "John met back up with his teammates on the 15th of August 2023 after his trip.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John's teammates give him when they met on Aug 15th?",
+      "ground_truth": "a basketball with autographs on it",
+      "generated_answer": "John's teammates gave him a ball when they met on August 15th, which serves as a reminder of their bond and support.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did John's teammates sign the basketball they gave him?",
+      "ground_truth": "to show their friendship and appreciation",
+      "generated_answer": "John's teammates signed the basketball to show their friendship and appreciation, serving as a reminder of their bond and support.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is the main intention behind Tim wanting to attend the book conference?",
+      "ground_truth": "to learn more about literature and create a stronger bond to it",
+      "generated_answer": "Tim wants to attend the book conference to engage with authors, publishers, and book lovers, discussing their favorite novels and sharing his love for books.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new activity has Tim started learning in August 2023?",
+      "ground_truth": "play the piano",
+      "generated_answer": "In August 2023, Tim started learning how to play the violin.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which movie's theme is Tim's favorite to play on the piano?",
+      "ground_truth": "\"Harry Potter and the Philosopher's Stone\"",
+      "generated_answer": "Tim's favorite movie theme to play on the piano is from \"Harry Potter,\" as he has expressed a strong connection to the series and its music.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to Tim?",
+      "ground_truth": "Watching it with his family",
+      "generated_answer": "\"Harry Potter and the Philosopher's Stone\" is special to Tim because it was the first movie from the series, and it brings back great memories of watching it with his family, which he describes as a dream come true.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which movie does Tim mention they enjoy watching during Thanksgiving?",
+      "ground_truth": "\"Home Alone\"",
+      "generated_answer": "Tim mentions that they enjoy watching \"Home Alone\" during Thanksgiving.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What tradition does Tim mention they love during Thanksgiving?",
+      "ground_truth": "Prepping the feast and talking about what they're thankful for",
+      "generated_answer": "Tim mentions that they love prepping the feast, talking about what they're thankful for, and watching movies during Thanksgiving.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long did John and his high school basketball teammates play together?",
+      "ground_truth": "Four years",
+      "generated_answer": "John and his high school basketball teammates played together for four years.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How was John's experience in New York City?",
+      "ground_truth": "Amazing",
+      "generated_answer": "John's experience in New York City was amazing; he found the culture, food, and energy of the city to be incredible. He enjoyed exploring new places, trying local seafood, and felt welcomed by the atmosphere, despite initially having some trouble with the subway.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John say about NYC, enticing Tim to visit?",
+      "ground_truth": "It's got so much to check out - the culture, food - you won't regret it.",
+      "generated_answer": "John said that NYC is amazing with so much to check out, including the culture and food, and that visiting would be an unforgettable adventure. He also mentioned that exploring the city and trying all the restaurants was awesome, making it a must-visit.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of soup did John make recently?",
+      "ground_truth": "tasty soup with sage",
+      "generated_answer": "John made a tasty soup recently, but he didn't specify the type of soup in the context provided.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What spice did John add to the soup for flavor?",
+      "ground_truth": "sage",
+      "generated_answer": "John added sage to the soup for flavor.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is Tim excited to see at Universal Studios?",
+      "ground_truth": "The Harry Potter stuff",
+      "generated_answer": "Tim is excited to see the Harry Potter attractions at Universal Studios.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where are John and his teammates planning to explore on a team trip?",
+      "ground_truth": "a new city",
+      "generated_answer": "John and his teammates are planning to explore Seattle on their team trip next month, which would be in June 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What city did Tim suggest to John for the team trip next month?",
+      "ground_truth": "Edinburgh, Scotland",
+      "generated_answer": "Tim suggested Edinburgh, Scotland for the team trip next month.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John want to do after his basketball career?",
+      "ground_truth": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+      "generated_answer": "After his basketball career, John wants to use his platform to make a positive difference, inspire others, and possibly start a foundation to do charity work.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What advice did Tim give John about picking endorsements?",
+      "ground_truth": "Ensure they align with values and brand, look for companies that share the desire to make a change and help others, make sure the endorsement feels authentic",
+      "generated_answer": "Tim advised John to ensure that endorsements align with his values and brand, and to look for companies that share his desire to make a change and help others.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What book recommendation did Tim give to John for the trip?",
+      "ground_truth": "A fantasy novel by Patrick Rothfuss",
+      "generated_answer": "Tim recommended the fantasy novel \"The Name of the Wind\" by Patrick Rothfuss to John for his trip.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of venue did John and his girlfriend choose for their wedding ceremony?",
+      "ground_truth": "Greenhouse",
+      "generated_answer": "John and his girlfriend chose a lovely greenhouse venue for their wedding ceremony.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the setting for John and his wife's first dance?",
+      "ground_truth": "Cozy restaurant",
+      "generated_answer": "John and his wife had their first dance at a cozy restaurant, which was dreamy with music and candlelight.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which basketball team does Tim support?",
+      "ground_truth": "The Wolves",
+      "generated_answer": "Tim supports the Minnesota Wolves, as indicated in the conversation with John on 21 May, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What passion does Tim mention connects him with people from all over the world?",
+      "ground_truth": "passion for fantasy stuff",
+      "generated_answer": "Tim mentions that his love for traveling and exploring different cultures connects him with people from all over the world.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How does John describe the game season for his team?",
+      "ground_truth": "intense with tough losses and great wins",
+      "generated_answer": "John describes the game season for his team as intense, with both tough losses and great wins, and overall feels they did pretty well. He also mentions that their team bond is strong, which makes all the hard work worth it.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does John say his team handles tough opponents?",
+      "ground_truth": "by backing each other up and not quitting",
+      "generated_answer": "John says his team handles tough opponents by backing each other up and not quitting, which drives them to get better. He emphasizes the importance of communication and bonding within the team to improve their performances.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What motivates John's team to get better, according to John?",
+      "ground_truth": "facing tough opponents",
+      "generated_answer": "John's team is motivated to get better by facing tough opponents, supporting each other, and having a strong bond that pushes them to improve. Additionally, reminders of their passion for the game and the belief from teammates also drive their motivation.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did John's team win at the end of the season?",
+      "ground_truth": "a trophy",
+      "generated_answer": "John's team won a trophy at the end of the season.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Tim capture the photography of the sunset over the mountain range?",
+      "ground_truth": "Smoky Mountains",
+      "generated_answer": "Tim captured the photography of the sunset over the mountain range during his trip to the Smoky Mountains in 2022.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does John feel about being seen as a mentor by some of the younger players?",
+      "ground_truth": "It feels great",
+      "generated_answer": "John feels that being seen as a mentor by some of the younger players is really rewarding and fulfilling. He enjoys providing them with advice and support, and he appreciates having their trust and admiration.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John find rewarding about mentoring the younger players?",
+      "ground_truth": "Seeing their growth, improvement, and confidence",
+      "generated_answer": "John finds mentoring younger players rewarding because he loves sharing his skills and knowledge, witnessing their growth and improvement, and making a positive impact on their lives. He also enjoys being a positive role model and gaining their trust and admiration.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What has John been able to help the younger players achieve?",
+      "ground_truth": "reach their goals",
+      "generated_answer": "John has been able to help the younger players achieve growth, improvement, and increased confidence. He provides mentorship, advice, and support both on and off the court, serving as a positive role model for them.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What genre is the novel that Tim is writing?",
+      "ground_truth": "Fantasy",
+      "generated_answer": "Tim is writing a fantasy novel.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who is one of Tim's sources of inspiration for writing?",
+      "ground_truth": "J.K. Rowling",
+      "generated_answer": "One of Tim's sources of inspiration for writing is J.K. Rowling, whom he finds to be an inspiring writer due to her captivating detail and creative storytelling.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What J.K. Rowling quote does Tim resonate with?",
+      "ground_truth": "\"Turn on the light - happiness hides in the darkest of times.\"",
+      "generated_answer": "Tim resonates with the J.K. Rowling quote: \"Turn on the light - happiness hides in the darkest of times.\"",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does John write on the whiteboard to help him stay motivated?",
+      "ground_truth": "motivational quotes and strategies",
+      "generated_answer": "John writes down motivational quotes and strategies on the whiteboard to help him stay focused and push through tough workouts.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What hobby is a therapy for John when away from the court?",
+      "ground_truth": "Cooking",
+      "generated_answer": "Cooking is a therapy for John when he is away from the court.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of meal does John often cook using a slow cooker?",
+      "ground_truth": "honey garlic chicken with roasted veg",
+      "generated_answer": "John often cooks honey garlic chicken with roasted vegetables using a slow cooker.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How will John share the honey garlic chicken recipe with the other person?",
+      "ground_truth": "write it down and mail it",
+      "generated_answer": "John will share the honey garlic chicken recipe by writing it down and mailing it to Tim.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was Tim's huge writing issue last week,as mentioned on November 6, 2023?",
+      "ground_truth": "He got stuck on a plot twist",
+      "generated_answer": "Tim's huge writing issue last week, as mentioned on November 6, 2023, was that he got stuck on a plot twist and couldn't find his way forward with his writing on October 30, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+      "ground_truth": "a basketball signed by his favorite player",
+      "generated_answer": "Tim has a pair of special shoes that serve as a reminder of his hard work and successes, making them his prized possession.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Why do Tim and John find LeBron inspiring?",
+      "ground_truth": "LeBron's determination and the epic block in Game 7 of the '16 Finals",
+      "generated_answer": "Tim finds LeBron inspiring because of his epic moments in games, like a crucial block in the Finals that changed the outcome, showcasing his determination. John admires LeBron's work ethic, dedication, and moments of heart, which motivate him to push himself and be a leader.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John describe the views during their road trip out on the European coastline?",
+      "ground_truth": "Spectacular",
+      "generated_answer": "John described the views during their road trip out on the European coastline as amazing and spectacular, highlighting that they created wonderful memories while bonding.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is one of Tim's favorite fantasy TV shows, as mentioned on November 11, 2023?",
+      "ground_truth": "\"That\"",
+      "generated_answer": "One of Tim's favorite fantasy TV shows is \"Game of Thrones,\" as mentioned on August 2, 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How does Tim stay motivated during difficult study sessions?",
+      "ground_truth": "Visualizing goals and success",
+      "generated_answer": "Tim stays motivated during difficult study sessions by remembering his passion for writing and reading, breaking up his studying into smaller parts with short breaks, and turning challenges into learning experiences.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Tim say about his injury on 16 November, 2023?",
+      "ground_truth": "The doctor said it's not too serious",
+      "generated_answer": "On 16 November 2023, Tim expressed support by saying, \"Take care! Keep pushing on. Talk soon,\" while John mentioned that his injury had been rough but he was staying positive.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What was the setback Tim faced in his writing project on 21 November, 2023?",
+      "ground_truth": "Story based on experiences in the UK didn't go as planned",
+      "generated_answer": "On 14 November 2023, Tim faced a setback in his writing project when he tried to write a story based on his experiences in the UK, but it didn't go the way he wanted.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John overcome his ankle injury from last season?",
+      "ground_truth": "stayed focused on recovery and worked hard to strengthen his body",
+      "generated_answer": "John overcame his ankle injury by focusing on physical therapy, staying active, and doing daily rehab exercises. He also adapted his training routine, balancing basketball and strength training while listening to his body for rest.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What motivated Tim to keep pushing himself to get better in writing and reading?",
+      "ground_truth": "Love for writing and reading",
+      "generated_answer": "Tim is motivated to keep pushing himself in writing and reading because he loves what he does, finds inspiration in books, and believes that they help him grow and feel better.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John overcome a mistake he made during a big game in basketball?",
+      "ground_truth": "Worked hard to get better and focused on growth",
+      "generated_answer": "John overcame his mistake during a big basketball game by not getting stuck in that moment and instead working hard to improve. He learned from the experience, which helped him grow as a player.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What book did John recently finish rereading that left him feeling inspired and hopeful about following dreams?",
+      "ground_truth": "The Alchemist",
+      "generated_answer": "John recently finished rereading \"The Alchemist,\" which left him feeling inspired and hopeful about following his dreams.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+      "ground_truth": "made him think again about following dreams and searching for personal legends",
+      "generated_answer": "\"The Alchemist\" inspired John to think about following dreams and searching for personal legends, motivating him to keep chasing his dreams and trust the process. He found the book to be significantly impactful in shaping his perspective on life and goals.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is John trying out to improve his strength and flexibility after recovery from ankle injury?",
+      "ground_truth": "yoga",
+      "generated_answer": "John is trying out yoga to improve his strength and flexibility after recovering from his ankle injury.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long does John usually hold the yoga pose he shared with Tim?",
+      "ground_truth": "30-60 seconds",
+      "generated_answer": "John usually holds the yoga pose for 30-60 seconds.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where was the forest picture shared by John on December 1,2023 taken?",
+      "ground_truth": "near his hometown",
+      "generated_answer": "The forest picture shared by John on December 1, 2023, was taken during his trip to the Rocky Mountains in 2022.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Tim recently start learning in addition to being part of a travel club and working on studies?",
+      "ground_truth": "an instrument",
+      "generated_answer": "Tim recently started learning how to play the violin.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What instrument is Tim learning to play in December 2023?",
+      "ground_truth": "violin",
+      "generated_answer": "Tim is learning to play the violin in December 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long has Tim been playing the piano for, as of December 2023?",
+      "ground_truth": "about four months",
+      "generated_answer": "As of December 6, 2023, Tim has been playing the piano for about four months. This means he started playing around early August 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What book did Tim just finish reading on 8th December, 2023?",
+      "ground_truth": "\"A Dance with Dragons\"",
+      "generated_answer": "Tim just finished reading \"A Dance with Dragons\" on 8th December, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which book did Tim recommend to John as a good story on 8th December, 2023?",
+      "ground_truth": "\"A Dance with Dragons\"",
+      "generated_answer": "Tim recommended \"The Name of the Wind\" to John as a good story on 8th December, 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is the topic of discussion between John and Tim on 11 December, 2023?",
+      "ground_truth": "Academic achievements and sports successes",
+      "generated_answer": "On 11 December 2023, John and Tim discussed new success stories and Tim's recent experiences, including his travels and interests in different cultures.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of game did John have a career-high in assists in?",
+      "ground_truth": "basketball",
+      "generated_answer": "John had a career-high in assists in a basketball game on 8 December 2023 against their rival.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was John's way of dealing with doubts and stress when he was younger?",
+      "ground_truth": "practicing basketball outside for hours",
+      "generated_answer": "John dealt with doubts and stress when he was younger by practicing basketball outside for hours, dreaming of playing in big games. This activity served as his way of coping with those feelings.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John feel about the atmosphere during the big game against the rival team?",
+      "ground_truth": "electric and intense",
+      "generated_answer": "John felt that the atmosphere during the big game against the rival team was electric and incredible, filled with energy and excitement. He expressed that it was a thrilling experience, highlighting the camaraderie and motivation among teammates.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did John feel after being able to jog without pain?",
+      "ground_truth": "It was a huge success.",
+      "generated_answer": "John felt great after being able to jog without pain, describing it as a huge success and a relief after being out for so long. He celebrated this milestone with friends and family.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of deal did John get in December?",
+      "ground_truth": "Deal with a renowned outdoor gear company",
+      "generated_answer": "In December 2023, John got an amazing deal with a renowned outdoor gear company on 12 December 2023. He also signed up with Nike for a basketball shoe and gear deal and was in talks with Gatorade about a potential sponsorship.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where was the photoshoot done for John's gear deal?",
+      "ground_truth": "In a gorgeous forest",
+      "generated_answer": "The photoshoot for John's gear deal was done in a gorgeous forest near his hometown.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "In which area has John's team seen the most growth during training?",
+      "ground_truth": "Communication and bonding",
+      "generated_answer": "John's team has seen the most growth in communication and bonding during training.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of seminars is John conducting?",
+      "ground_truth": "Sports and marketing seminars",
+      "generated_answer": "John is conducting seminars focused on helping people with sports and marketing.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity did Tim do after reading the stories about the Himalayan trek?",
+      "ground_truth": "visited a travel agency",
+      "generated_answer": "After reading the stories about the Himalayan trek, Tim mentioned that it motivated him, which likely inspired him to plan his next adventure.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is one cause that John supports with his influence and resources?",
+      "ground_truth": "youth sports and fair chances in sports",
+      "generated_answer": "John supports youth sports and fights for fair chances in sports for underserved communities.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new fantasy TV series is Tim excited about?",
+      "ground_truth": "\"The Wheel of Time\"",
+      "generated_answer": "Tim is excited about the new fantasy TV series \"The Wheel of Time,\" which is based on a book series he loves.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which language is Tim learning?",
+      "ground_truth": "German",
+      "generated_answer": "Tim is learning German.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What language does Tim know besides German?",
+      "ground_truth": "Spanish",
+      "generated_answer": "Besides German, Tim knows French, as he mentioned having taken it in high school.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What book did Tim get in Italy that inspired him to cook?",
+      "ground_truth": "a cooking book",
+      "generated_answer": "Tim got a book in Italy that inspired him to cook, but the specific title of the book is not mentioned in the provided context.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is John's favorite book series?",
+      "ground_truth": "Harry Potter",
+      "generated_answer": "John's favorite book series includes \"The Hobbit,\" \"Lord of the Rings,\" and he has also mentioned enjoying \"Harry Potter\" and \"Game of Thrones\" (GoT).",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "According to John, who is his favorite character from Lord of the Rings?",
+      "ground_truth": "Aragorn",
+      "generated_answer": "John's favorite character from Lord of the Rings is Aragorn.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why does John like Aragorn from Lord of the Rings?",
+      "ground_truth": "brave, selfless, down-to-earth attitude",
+      "generated_answer": "John likes Aragorn because he admires his brave, selfless, and down-to-earth attitude, which inspires him. He appreciates how Aragorn never gives up and always stands up for justice, as well as his growth from a ranger to the king of Gondor.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of painting does John have in his room as a reminder?",
+      "ground_truth": "a painting of Aragorn",
+      "generated_answer": "John has a painting in his room that serves as a reminder to stay true and be a leader in everything he does.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is the painting of Aragorn a reminder for John to be in everything he does?",
+      "ground_truth": "be a leader",
+      "generated_answer": "The painting of Aragorn is a reminder for John to stay true and be a leader in everything he does.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What map does Tim show to his friend John?",
+      "ground_truth": "a map of Middle-earth from LOTR",
+      "generated_answer": "Tim shows a map of Middle-earth from \"The Lord of the Rings\" (LOTR) to his friend John.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where will Tim be going for a semester abroad?",
+      "ground_truth": "Ireland",
+      "generated_answer": "Tim will be going to Galway, Ireland for a semester abroad.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which city in Ireland will Tim be staying in during his semester abroad?",
+      "ground_truth": "Galway",
+      "generated_answer": "Tim will be staying in Galway, Ireland during his semester abroad.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What charity event did John organize recently in 2024?",
+      "ground_truth": "benefit basketball game",
+      "generated_answer": "John organized a benefit basketball game on 31 December 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What achievement did John share with Tim in January 2024?",
+      "ground_truth": "endorsement with a popular beverage company",
+      "generated_answer": "In January 2024, John shared that he received an endorsement with a popular beverage company, which he described as a total dream come true.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was Johns's reaction to sealing the deal with the beverage company?",
+      "ground_truth": "crazy feeling, sense of accomplishment",
+      "generated_answer": "John felt it was a total dream come true and described the experience as \"crazy\" when he sealed the deal with the beverage company on 5 January 2024. He expressed that it felt like all his hard work paid off.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which city did John recommend to Tim in January 2024?",
+      "ground_truth": "Barcelona",
+      "generated_answer": "John recommended Galway to Tim in January 2024.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    }
+  ],
+  "summary": {
+    "pipeline": "VAC Memory System v1",
+    "architecture": [
+      "1. Query Classification",
+      "2. LLM Synonym Expansion (qwen2.5:14b)",
+      "3. [TARGET] MCA-first filter",
+      "4. [TARGET] FAISS top-k (semantic, BGE-large 1024D)",
+      "5. [TARGET] BM25 top-k (sparse)",
+      "6. Union(MCA, FAISS, BM25) -> ~112 docs",
+      "7. [FIRE] Cross-Encoder DIRECT reranking (ALL ~112 docs -> top-15)",
+      "8. gpt-4o-mini answer (T=0.0, max_tokens=150)   MEM0 OFFICIAL!"
+    ],
+    "embedding_model": "bge-large-en-v1.5",
+    "embedding_dim": 1024
+  }
+}

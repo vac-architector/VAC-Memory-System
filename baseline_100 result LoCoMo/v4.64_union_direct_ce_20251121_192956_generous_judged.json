@@ -1,0 +1,1470 @@
+{
+  "source_file": "/mnt/d/LoCoMo_SOTA_v4.64/results/baseline_100runs_20251120/v4.64_union_direct_ce_20251121_192956.json",
+  "judge_model": "gpt-4o-mini (GENEROUS - Mem0 official)",
+  "judge_prompt": "ACCURACY_PROMPT (generous grading)",
+  "filter": "Cat1-4 only (no adversarial Cat5)",
+  "llm_judge_accuracy": 0.7564102564102564,
+  "llm_judge_correct": 118,
+  "llm_judge_total": 156,
+  "category_breakdown": {
+    "1": {
+      "correct": 31,
+      "total": 37
+    },
+    "2": {
+      "correct": 16,
+      "total": 33
+    },
+    "3": {
+      "correct": 12,
+      "total": 13
+    },
+    "4": {
+      "correct": 59,
+      "total": 73
+    }
+  },
+  "category_breakdown_named": {
+    "1": {
+      "correct": 31,
+      "total": 37,
+      "label": "Single-hop (Factual)"
+    },
+    "2": {
+      "correct": 16,
+      "total": 33,
+      "label": "Temporal"
+    },
+    "3": {
+      "correct": 12,
+      "total": 13,
+      "label": "Multi-hop"
+    },
+    "4": {
+      "correct": 59,
+      "total": 73,
+      "label": "Commonsense"
+    }
+  },
+  "judge_results": [
+    {
+      "question": "What kind of car does Evan drive?",
+      "ground_truth": "Prius",
+      "generated_answer": "Evan drives a new Prius, which he recently bought.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kinds of things did Evan have broken?",
+      "ground_truth": "His old Prius and his new Prius.",
+      "generated_answer": "Evan had his new Prius and his old Prius broken down. Additionally, he mentioned dealing with unexpected issues related to these car troubles.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where has Evan been on roadtrips with his family?",
+      "ground_truth": "Rockies, Jasper",
+      "generated_answer": "Evan has been on road trips with his family to Jasper, the Rocky Mountains, and Banff. He also mentioned a trip to Canada on 31 July 2023 and a road trip in September 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How many Prius has Evan owned?",
+      "ground_truth": "two",
+      "generated_answer": "Evan has owned at least two Priuses: an old one that broke down and a new one that he recently bought.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which hobby did Sam take up in May 2023?",
+      "ground_truth": "painting",
+      "generated_answer": "Sam took up painting in May 2023, as he expressed interest in trying it on 18 May 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which country was Evan visiting in May 2023?",
+      "ground_truth": "Canada",
+      "generated_answer": "Evan was visiting Canada in May 2023, specifically mentioning a road trip to Jasper and hiking on 11 May 2023.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How many roadtrips did Evan take in May 2023?",
+      "ground_truth": "two",
+      "generated_answer": "Evan took one road trip in May 2023, which was to Jasper with his family during the weekend of 13-14 May 2023.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What new hobbies did Sam consider trying?",
+      "ground_truth": "Painting, kayaking, hiking, cooking, running",
+      "generated_answer": "Sam considered trying painting and kayaking as new hobbies.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What hobby did Evan start practicing a few years ago that he enjoys?",
+      "ground_truth": "Watercolor painting",
+      "generated_answer": "Evan started practicing painting a few years ago, and he enjoys it as a way to relieve stress and express creativity.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan go to Jasper with his family?",
+      "ground_truth": "weekend before May 24, 2023",
+      "generated_answer": "Evan went to Jasper with his family on 13 May 2023, as he mentioned taking the trip last weekend from the dialog date of 18 May 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+      "ground_truth": "camping trip in the outdoors",
+      "generated_answer": "Evan would prefer a camping trip in the outdoors, as he has expressed enjoyment of nature, hiking, and camping experiences in multiple conversations.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What health issue did Sam face that motivated him to change his lifestyle?",
+      "ground_truth": "Weight problem",
+      "generated_answer": "Sam faced a health scare when he ended up in the ER with a severe stomachache, which was diagnosed as gastritis, motivating him to change his lifestyle. Additionally, he was also concerned about his weight being a serious health risk after a check-up on 15 May 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Sam first go to the doctor and find out he had a weight problem?",
+      "ground_truth": "A few days before May 24, 2023.",
+      "generated_answer": "Sam first went to the doctor and found out he had a weight problem on 21 May 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan have his sudden heart palpitation incident that really shocked him up?",
+      "ground_truth": "first week of June 2023",
+      "generated_answer": "Evan had his sudden heart palpitation incident on 30 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is Evan's favorite food?",
+      "ground_truth": "Ginger snaps",
+      "generated_answer": "Evan's favorite food appears to be ginger snaps, as he has mentioned them as his weakness and loves them despite trying to limit his intake.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of unhealthy snacks does Sam enjoy eating?",
+      "ground_truth": "soda, candy",
+      "generated_answer": "Sam enjoys eating soda and candy, which he acknowledges are not the best habits. He also has cravings for sugary drinks and snacks, especially during times of stress or boredom.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What recurring issue frustrates Sam at the grocery store?",
+      "ground_truth": "Malfunctioning self-checkout machines.",
+      "generated_answer": "Sam is frustrated with the self-checkout machines at the grocery store, as they have been frequently broken.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Sam's friends mock him for being overweight?",
+      "ground_truth": "Friday before 27 July 2023",
+      "generated_answer": "Sam's friends mocked him for being overweight on 21 July 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of healthy food suggestions has Evan given to Sam?",
+      "ground_truth": "flavored seltzer water, dark chocolate with high cocoa content, air-popped popcorn and fruit, veggies, healthy sandwich snacks, energy balls, grilled chicken salad with avocado",
+      "generated_answer": "Evan has suggested focusing on a balanced diet, healthy swaps, and adding more vegetables to meals. He also mentioned low-impact exercises and staying upbeat about healthy eating.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Considering their conversations and personal growth, what advice might Evan and Sam give to someone facing a major life transition or challenge?",
+      "ground_truth": "Evan and Sam would likely advise embracing small, consistent changes​​, finding stress-relieving activities like hiking​​, painting, and road trips​​, and the importance of friendship and support in navigating challenges​​.",
+      "generated_answer": "Evan and Sam would likely advise someone facing a major life transition to stay positive, believe in themselves, take it one day at a time, and seek support from others. They would emphasize the importance of setting goals, being patient with oneself, and making small, consistent steps towards progress.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+      "ground_truth": "a cookbook with healthy recipes or a subscription to a healthy meal delivery service.",
+      "generated_answer": "An appropriate gift for both Evan and Sam to encourage their healthy lifestyles could be a fitness tracker or a gym membership, as both have shown commitment to exercise and healthy living. Additionally, a subscription to a healthy meal kit service could support their dietary changes.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Evan describe the woman and his feelings for her that he met in Canada?",
+      "ground_truth": "He says she's cool, incredible, like something out of a movie, and that he feels alive around her. Every moment with her is fun and energetic, also Evan feels really lucky to have someone who gets him.",
+      "generated_answer": "Evan describes the woman he met in Canada as incredible and feels that every moment with her is fun and energizing. He experienced love at first sight and feels lucky to have found someone who truly understands him.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When Evan did meet his future wife?",
+      "ground_truth": "week before August 7, 2023.",
+      "generated_answer": "Evan met his future wife on 31 July 2023 while on a trip to Canada.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Sam start working out at the gym?",
+      "ground_truth": "July 28, 2023",
+      "generated_answer": "Sam started working out at the gym on 21 August 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What significant event happened in Sam's life towards the end of summer 2023?",
+      "ground_truth": "He fell in love with a Canadian woman",
+      "generated_answer": "Towards the end of summer 2023, specifically on 21 July 2023, Sam experienced hurtful mockery from friends about his weight, which motivated him to make changes in his life. Additionally, he reported being on a diet and living healthier on 19 August 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which year did Evan start taking care of his health seriously?",
+      "ground_truth": "2021",
+      "generated_answer": "Evan started taking care of his health seriously around May 30, 2023, after experiencing a health scare with heart palpitations. He mentioned that he has been working on his health for about two years, indicating a significant focus on well-being since around 2021.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What motivates Evan to take care of his health?",
+      "ground_truth": "family, fitness tracker, thirst for adventure on interesting hikes",
+      "generated_answer": "Evan is motivated to take care of his health primarily by his family, which helps him with his health goals, and by a desire for strength and resilience. Additionally, he finds enjoyment in fitness routines and the feeling of being healthy and strong.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
+      "ground_truth": "fitness tracker",
+      "generated_answer": "Evan could gift Sam a fitness tracker or smartwatch to help him keep up with his fitness goals, as it tracks progress and serves as a reminder to stay active.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of writing does Sam do to relax and cope with his health issues?",
+      "ground_truth": "journalling, creative writing",
+      "generated_answer": "Sam writes in his journal and engages in creative writing to express his innermost thoughts and feelings, which he finds therapeutic and helpful for coping with his health issues.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who did Evan meet on his trip to Canada, and who did he come back from Canada with?",
+      "ground_truth": "Evan met the woman he fell in love with and returned with her.",
+      "generated_answer": "Evan met an awesome Canadian woman on his trip to Canada, and he came back from Canada with his new significant other (SO).",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When Evan get back from a vacation with his SO?",
+      "ground_truth": "August 13, 2023",
+      "generated_answer": "Evan got back from a vacation with his SO in Canada on 18 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How might Evan and Sam's experiences with health and lifestyle changes influence their approach to stress and challenges?",
+      "ground_truth": "Their experiences likely lead them to view challenges as opportunities for growth and change. They both have embraced healthier lifestyles, indicating a proactive approach to managing stress and challenges.",
+      "generated_answer": "Evan and Sam's experiences with health challenges have led them to prioritize healthier lifestyles, which they believe can positively influence their ability to manage stress. Evan has found that making small changes, like regular exercise and diet adjustments, has significantly impacted his well-being, while Sam's recent health scare has prompted him to re-evaluate his priorities and approach to stress.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What recurring frustration does Evan experience?",
+      "ground_truth": "Evan consistently misplaces his keys every week.",
+      "generated_answer": "Evan experiences recurring frustration with his health and lifestyle challenges, including his new Prius breaking down, job loss due to company downsizing, and his son's soccer accident on 12 August 2023.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is the recurring dream that Sam keeps having?",
+      "ground_truth": "he's flying over a cityscape.",
+      "generated_answer": "Sam keeps having a recurring dream where he is flying over skyscrapers.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What accidents has Evan's son faced lately?",
+      "ground_truth": "injured at a soccer game, fell off his bike",
+      "generated_answer": "Evan's son faced a soccer accident on 12 August 2023, where he hurt his ankle, and later had a bike accident on 12 December 2023, where he fell off his bike.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When was Evan's son injured at soccer?",
+      "ground_truth": "Saturday before August 15, 2023.",
+      "generated_answer": "Evan's son was injured at soccer on 12 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of foods or recipes has Sam recommended to Evan?",
+      "ground_truth": "grilled vegetables, grilled chicken and veggie stir-fry, poutine",
+      "generated_answer": "Sam has recommended a tasty and easy roasted vegetable recipe to Evan. Additionally, he mentioned making homemade lasagna and marinating and grilling chicken with veggies, indicating a focus on flavorful and healthy meals.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of healthy meals did Sam start eating after getting a health scare?",
+      "ground_truth": "salad, grilled salmon and vegetables, grilled chicken and veggie stir-fry, Beef Merlot, fruit bowl, smoothie bowl",
+      "generated_answer": "After getting a health scare, Sam started eating healthier meals, including a flavorful and healthy grilled chicken and veggie stir-fry, and mentioned a tasty roasted vegetable recipe.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+      "ground_truth": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+      "generated_answer": "Nature and the outdoors play a significant role in Evan and Sam's mental well-being by providing calmness, peace, and clarity. They both find that spending time in nature rejuvenates them and helps them relax, with Evan noting it as a great healer and Sam emphasizing its ability to help find inner peace.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How many months lapsed between Sam's first and second doctor's appointment?",
+      "ground_truth": "three months",
+      "generated_answer": "Sam's first doctor's appointment was on 21 May 2023, and the second appointment was on 21 November 2023. Therefore, six months lapsed between the two appointments.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Evan start taking painting classes?",
+      "ground_truth": "Few days before 19 August, 2023.",
+      "generated_answer": "Evan started taking painting classes on 16 August 2022.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which classes did Evan join in mid-August 2023?",
+      "ground_truth": "painting classes",
+      "generated_answer": "Evan joined painting classes on 16 August 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Evan get into painting?",
+      "ground_truth": "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan.",
+      "generated_answer": "Evan got into painting when a friend gave him a painting that inspired him, leading him to start painting and join classes to connect with like-minded people.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How often does Sam get health checkups?",
+      "ground_truth": "every three months",
+      "generated_answer": "Sam had a check-up with his doctor on 21 May 2023, and he mentioned going for a check-up on a Monday, but the exact frequency of his health checkups is not specified.",
+      "category": 3,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of subjects does Evan enjoy painting?",
+      "ground_truth": "nature landscapes, portraits, abstract minimalism",
+      "generated_answer": "Evan enjoys painting landscapes and aims to capture the vibe of nature, conveying the peacefulness of being outdoors. He also expresses himself through art by painting what is on his mind or his feelings.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which places in Canada was Evan visiting in July 2023?",
+      "ground_truth": "Banff, Rocky Mountains",
+      "generated_answer": "In July 2023, Evan visited Canada and specifically mentioned taking a road trip, which included stunning scenery and nature. He also drove through the Icefields Parkway and visited Jasper.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How do Evan and Sam use creative outlets to cope with life's challenges?",
+      "ground_truth": "Evan and Sam use creative activities, like painting and writing, as therapeutic tools to express themselves and cope with stress.",
+      "generated_answer": "Evan uses painting as a creative outlet to relieve stress and express his feelings, while Sam copes by writing in his journal and engaging in creative writing to articulate his innermost thoughts.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan go skiing in Banff?",
+      "ground_truth": "July 2023",
+      "generated_answer": "Evan went skiing in Banff in July 2023, as he mentioned a trip to Canada during that month.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new diet and lifestyle change did Sam adopt over time?",
+      "ground_truth": "Healthy eating, exercise routine, running, hiking",
+      "generated_answer": "Sam adopted a healthier diet and started practicing yoga, beginning a new diet and exercise routine on 21 August 2023. He also reduced his soda and candy intake and attended a Weight Watchers meeting on 4 December 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who was injured in Evan's family?",
+      "ground_truth": "Evan's son and Evan himself",
+      "generated_answer": "Evan's son was injured in a soccer accident on 12 August 2023, hurting his ankle. Additionally, his son had another accident on 12 December 2023, where he fell off his bike.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of hobbies does Evan pursue?",
+      "ground_truth": "painting, hiking, reading books, biking, skiing, snowboarding, ice skating, swimming, camping, kayaking",
+      "generated_answer": "Evan pursues hobbies such as skiing, snowboarding, ice skating, hiking, and painting, particularly landscapes. He finds painting to be a great stress reliever and enjoys watercolor techniques.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What challenges does Sam face in his quest for a healthier lifestyle, and how does he address them?",
+      "ground_truth": "Sam faces challenges like maintaining motivation and making dietary changes. He addresses them by enrolling in cooking classes and seeking support from friends like Evan.",
+      "generated_answer": "Sam faces challenges such as cravings for sugary drinks and snacks, pressure from his family regarding his health routine, and difficulties in reaching fitness goals. He addresses these by taking small steps towards a healthier lifestyle, staying adaptable with his activities, and finding motivation through quotes and support from friends.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which activity do Evan and Sam plan on doing together during September 2023?",
+      "ground_truth": "painting",
+      "generated_answer": "Evan and Sam plan to go hiking together during September 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Evan and Sam decide to paint together?",
+      "ground_truth": "Saturday after 11 September, 2023.",
+      "generated_answer": "Evan and Sam decided to paint together on Saturday, 26 August 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What personal health incidents does Evan face in 2023?",
+      "ground_truth": "heart palpitations, twisted ankle, twisted ankle",
+      "generated_answer": "In 2023, Evan faced several health incidents: he had a sudden heart palpitation incident on 30 May, a health scare that required a hospital visit on 14 November, and he twisted his knee on 25 August while playing basketball.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What recurring adventure does Evan have with strangers?",
+      "ground_truth": "Helping lost tourists and experiencing unexpected adventures in the city.",
+      "generated_answer": "Evan has a recurring adventure of going on interesting hikes, as he is motivated by a thirst for adventure in that area.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is Sam's persistent problem with his phone?",
+      "ground_truth": "His new phone malfunctioning, particularly with the navigation app.",
+      "generated_answer": "Sam's persistent problem with his phone is not explicitly mentioned in the provided context, but Evan suggests that updating the phone might help, indicating that Sam may be experiencing issues that could be resolved with an update.",
+      "category": 1,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which US state was Sam travelling in during October 2023?",
+      "ground_truth": "California",
+      "generated_answer": "Sam was traveling in California during October 2023, specifically in Lake Tahoe.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan start lifting weights?",
+      "ground_truth": "October 2022",
+      "generated_answer": "Evan started lifting weights on 18 May 2022, which is one year before the dialog date of 18 May 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Sam and his friend decide to try kayaking?",
+      "ground_truth": "October 14, 2023",
+      "generated_answer": "Sam and his friend decided to try kayaking on 18 May, 2023, as they mentioned they were going to try it \"now\" while being near the lake.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which new activity does Sam take up in October 2023?",
+      "ground_truth": "kayaking",
+      "generated_answer": "In October 2023, Sam takes up kayaking as a new activity.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of stress was Sam dealing with in October 2023?",
+      "ground_truth": "work-related stress",
+      "generated_answer": "In October 2023, Sam was dealing with stress related to health concerns, particularly about weight, as indicated by a doctor's warning about serious health risks. Additionally, there was pressure from family regarding his health routine.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What health scares did Sam and Evan experience?",
+      "ground_truth": "Sam faced a health scare with stomach pains that turned out to be gastritis, prompting him to rethink his health habits. Evan, on the other hand, experienced two separate incidents: a sudden heart palpitation incident and a different event involving a misunderstanding during a medical check-up. These experiences have significantly influenced their perspectives on health and well-being.",
+      "generated_answer": "Sam experienced a health scare with gastritis that led to an ER visit on 13 May 2023. Evan had a health scare with sudden heart palpitations on 30 May 2023 and another incident on 14 November 2023 where something suspicious was found during a check-up.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When was Sam in the ER?",
+      "ground_truth": "weekend before 17 October, 2023.",
+      "generated_answer": "Sam was in the ER on 14 October 2023 due to a severe stomachache, which was later diagnosed as gastritis.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which ailment does Sam have to face due to his weight?",
+      "ground_truth": "gastritis",
+      "generated_answer": "Sam has to face a serious health risk due to his weight, which was highlighted during a check-up on 21 May 2023. Additionally, he experienced a health scare related to gastritis on 14 October 2023, which may also be connected to his weight issues.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Does Evan live close to a beach or mountains?",
+      "ground_truth": "beach",
+      "generated_answer": "Evan lives close to both the beach and the mountains. He enjoys spending time at a beach where he finds peace and has also mentioned going to the Rocky Mountains for relaxation.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan lose his job?",
+      "ground_truth": "end of October 2023",
+      "generated_answer": "Evan lost his job in October 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan and Sam planned a trip to the beach together?",
+      "ground_truth": "December, 2023",
+      "generated_answer": "Evan and Sam planned a trip to the beach together on 9 November 2023, when Sam suggested they should make a plan to go.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What was Sam doing on December 4, 2023?",
+      "ground_truth": "Attending a Weight Watchers meeting",
+      "generated_answer": "On December 4, 2023, Sam attended a Weight Watchers meeting and learned some great tips.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which two significant life events occur in Evan's life in December 2023 with his partner?",
+      "ground_truth": "his partner gets pregnant and they get married",
+      "generated_answer": "In December 2023, two significant life events occur in Evan's life with his partner: his partner announces they are pregnant on 9 December, and Evan gets married on 19 December.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How long did Evan and his partner date before getting married?",
+      "ground_truth": "four months",
+      "generated_answer": "Evan and his partner dated for approximately five months before getting married on 19 December 2023, as he mentioned meeting her on 31 July 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Which major holiday season conincides with Evan's wedding?",
+      "ground_truth": "Christmas",
+      "generated_answer": "Evan's wedding coincides with the Christmas holiday season, as it is on 19 December 2023, just days before Christmas.",
+      "category": 3,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Which activity did Sam resume in December 2023 after a long time?",
+      "ground_truth": "hiking",
+      "generated_answer": "Sam resumed hiking in December 2023 after a long time, specifically taking friends on an epic hiking trip on 29 December 2023.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When is Evan planning a big family reunion?",
+      "ground_truth": "Summer 2024",
+      "generated_answer": "Evan is planning a big family reunion next summer, which would be in the summer of 2024.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan's son fall off his bike?",
+      "ground_truth": "Thursday before December 17, 2023.",
+      "generated_answer": "Evan's son fell off his bike on 12 December 2023.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Evan announce his marriage to his extended family?",
+      "ground_truth": "January 5, 2024",
+      "generated_answer": "Evan announced his marriage to his extended family on 5 January 2024.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When did Evan finish the painting that's hanging in the exhibit?",
+      "ground_truth": "few days before 17 December, 2023.",
+      "generated_answer": "Evan finished the painting that's hanging in the exhibit on 14 December 2023.",
+      "category": 2,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Evan spend his time with his bride after the wedding?",
+      "ground_truth": "family get-together, honeymoon in Canada to see snowy landscapes, ski, taste local cuisine and do some snowshoeing",
+      "generated_answer": "After the wedding, Evan spends time with his bride enjoying activities like hiking, biking, and exploring beautiful views, as well as planning their honeymoon in Canada where they intend to ski and try local cuisine.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who did Evan tell about his marriage?",
+      "ground_truth": "To Sam, to his friends from work, and to his and his wife's families.",
+      "generated_answer": "Evan told his extended family about his marriage on 5 January 2024. He also mentioned that he had to tell his work friends about getting married, indicating they were also informed.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "When will Evan and his partner have their honeymoon in Canada?",
+      "ground_truth": "February 2024",
+      "generated_answer": "OpenAI API Error: 502, <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "When did Evan have a drunken night with his friends?",
+      "ground_truth": "January 9, 2023",
+      "generated_answer": "Evan had a drunken night with his friends on 9 January 2024.",
+      "category": 2,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What is a stress reliever for Evan?",
+      "ground_truth": "Drawing, traveling, places with a beautiful view, yoga, sunsets or something comfortable for Evan",
+      "generated_answer": "Evan finds painting to be a great stress reliever. He also mentions that going for a drive and practicing yoga help him with stress.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is a stress reliever for Sam?",
+      "ground_truth": "Unhealthy snacks, sweets, yoga, places with beautiful views",
+      "generated_answer": "A stress reliever for Sam is yoga, which he mentioned has helped with his flexibility and stress levels. He is also considering trying painting as a way to de-stress.",
+      "category": 1,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of car did Evan get after his old Prius broke down?",
+      "ground_truth": "new Prius",
+      "generated_answer": "Evan got a new Prius after his old Prius broke down.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Evan get into watercolor painting?",
+      "ground_truth": "friend's advice",
+      "generated_answer": "Evan got into watercolor painting after a friend gave him a painting that inspired him. He then joined classes to connect with like-minded people and learn more about the medium.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan start doing a few years back as a stress-buster?",
+      "ground_truth": "watercolor painting",
+      "generated_answer": "Evan started painting a few years back as a stress-buster. He finds it to be a great way to relieve stress and express creativity.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What advice did Evan give Sam about finding a passion?",
+      "ground_truth": "keep trying new things until something sparks excitement",
+      "generated_answer": "Evan advised Sam to keep trying new things to find what works for him and to set goals, like a certain distance to run or number of push-ups, to stay motivated. He also suggested finding an exercise or hobby that he enjoys, like painting, to help de-stress.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Evan take his family for a road trip on 24 May, 2023?",
+      "ground_truth": "Jasper",
+      "generated_answer": "Evan took his family on a road trip to Jasper on 24 May, 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan find relaxing about his road trip to Jasper?",
+      "ground_truth": "fresh air, peacefulness, cozy cabin surrounded by mountains and forests",
+      "generated_answer": "Evan found the stunning views and the refreshing nature during his road trip to Jasper relaxing. He mentioned that being in such beautiful places helps him feel calm and revived.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What habit is Sam trying to change in terms of diet?",
+      "ground_truth": "consuming soda and candy",
+      "generated_answer": "Sam is trying to reduce his soda and candy intake as part of his efforts to adopt a healthier diet.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What new suggestion did Evan give to Sam regarding his soda and candy consumption?",
+      "ground_truth": "try flavored seltzer water and dark chocolate with high cocoa content",
+      "generated_answer": "Evan suggested that Sam try swapping soda for flavored seltzer water as a healthier alternative.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Sam agree to try instead of soda and candy?",
+      "ground_truth": "flavored seltzer water and dark chocolate with high cocoa content",
+      "generated_answer": "Sam agreed to try flavored seltzer water instead of soda and candy.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What frustrating issue did Sam face at the supermarket?",
+      "ground_truth": "broken self-checkout machines",
+      "generated_answer": "Sam faced a frustrating issue at the supermarket because all the self-checkout machines were broken, which negatively affected his mood.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What novel is Evan reading that he finds gripping?",
+      "ground_truth": "The Great Gatsby",
+      "generated_answer": "Evan is reading \"The Great Gatsby,\" which he finds gripping.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What kind of water does Evan suggest Sam try as an alternative to soda?",
+      "ground_truth": "Flavored seltzer water",
+      "generated_answer": "Evan suggests Sam try flavored seltzer water as an alternative to soda.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does the smartwatch help Evan with?",
+      "ground_truth": "tracks progress and serves as a constant reminder to keep going",
+      "generated_answer": "The smartwatch helps Evan with his health goals by tracking his progress and serving as a constant reminder to stay motivated.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What does the bonsai tree symbolize for Evan?",
+      "ground_truth": "strength and resilience",
+      "generated_answer": "The bonsai tree symbolizes strength and resilience for Evan, motivating him to keep going through tough times.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why did Evan decide to get the bonsai tree?",
+      "ground_truth": "motivates him to keep going through tough times",
+      "generated_answer": "Evan decided to get the bonsai tree because it symbolizes strength and resilience, and taking care of it motivates him to keep going through tough times.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "According to Sam, what is more important than perfection?",
+      "ground_truth": "progress",
+      "generated_answer": "According to Sam, progress is more important than perfection.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan suggest Sam to check out for insights into his dream?",
+      "ground_truth": "dream interpretation book",
+      "generated_answer": "Evan suggested that Sam check out a dream interpretation book for insights into his dream.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan mention he had been searching for fruitlessly for half an hour?",
+      "ground_truth": "his keys",
+      "generated_answer": "Evan mentioned he had been searching for his keys for half an hour.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What class is Sam taking to learn how to make healthier meals?",
+      "ground_truth": "cooking class",
+      "generated_answer": "Sam is taking a cooking class that is packed with healthy recipes.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What dish did Sam make on 18 August, 2023 that turned out flavorful?",
+      "ground_truth": "grilled dish with salmon and vegetables",
+      "generated_answer": "On 18 August 2023, Sam made a flavorful grilled chicken and veggie stir-fry.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of recipe did Evan request from Sam on 19 August, 2023?",
+      "ground_truth": "recipes with more vegetables",
+      "generated_answer": "Evan requested a recipe for healthy meals from Sam on 19 August, 2023. Sam responded by sharing a flavorful and healthy grilled chicken and veggie stir-fry recipe.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What food did Sam share a photo of on 19 August, 2023?",
+      "ground_truth": "bowl of spinach, avocado, and strawberries",
+      "generated_answer": "On 19 August, 2023, Sam shared a photo of a flavorful and healthy grilled chicken and veggie stir-fry.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What type of painting classes did Evan start taking in 2023?",
+      "ground_truth": "watercolor painting classes",
+      "generated_answer": "Evan started taking watercolor painting classes in 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan start painting years ago due to being inspired by a friend's gift?",
+      "ground_truth": "forest scene",
+      "generated_answer": "Evan started painting years ago after being inspired by a friend's gift of a painting.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What nature concept do watercolor painting classes emphasize according to Evan?",
+      "ground_truth": "observing nature and painting what is seen",
+      "generated_answer": "According to Evan, watercolor painting classes emphasize observing nature and painting what we see, capturing the vibe and peacefulness of being outdoors.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What type of landscapes does Evan love painting the most?",
+      "ground_truth": "sunsets over the ocean",
+      "generated_answer": "Evan loves painting landscapes the most, as he finds nature's beauty captivating and it brings him peace.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What fun activity did Evan mention doing in July 2023?",
+      "ground_truth": "skiing",
+      "generated_answer": "Evan mentioned that he took a road trip in July 2023, enjoying stunning scenery and amazing views. He also went on a trip to Canada on 31 July 2023, where he met an incredible Canadian woman.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What injury did Evan suffer from in August 2023?",
+      "ground_truth": "Twisted knee",
+      "generated_answer": "Evan suffered a knee injury on 25 August 2023, after twisting it. Additionally, his son had an ankle injury from a soccer accident on 12 August 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What sports activity has Evan been doing to stay active while dealing with the knee injury?",
+      "ground_truth": "Swimming",
+      "generated_answer": "Evan has been swimming to stay active while dealing with his knee injury.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What suggestion did Sam give to Evan to help with his knee issue?",
+      "ground_truth": "Consider low-impact exercises or physical therapy",
+      "generated_answer": "Sam suggested that Evan explore fun indoor activities or hobbies to stay active while he heals from his knee issue.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Evan suggest Sam try as a calming hobby?",
+      "ground_truth": "Painting",
+      "generated_answer": "Evan suggested that Sam try painting as a calming hobby, stating that it is a great way to relieve stress and be creative.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan recommend Sam acquire to get started with painting?",
+      "ground_truth": "Acrylic paints, brushes, canvas/paper, palette",
+      "generated_answer": "Evan recommended that Sam acquire acrylic paints, brushes, a canvas or paper, and a palette to mix colors to get started with painting.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity does Evan do to keep himself busy while healing his knee?",
+      "ground_truth": "Watercolor painting",
+      "generated_answer": "Evan keeps himself busy while healing his knee by swimming and doing watercolor painting.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What painting did Evan share with Sam in October?",
+      "ground_truth": "a cactus in the desert",
+      "generated_answer": "Evan shared a sunset painting with Sam in October 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What kind of writing does Sam enjoy as a form of expression?",
+      "ground_truth": "creative writing",
+      "generated_answer": "Sam enjoys writing in his journal and doing creative writing as a form of expression, as he finds it therapeutic and helpful for sorting out his feelings.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What electronics issue has been frustrating Sam lately?",
+      "ground_truth": "malfunctioning navigation app on the new phone",
+      "generated_answer": "Sam has been frustrated lately with issues at the self-checkout machines at the supermarket, as they were all broken.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What activity did Evan start one year ago?",
+      "ground_truth": "lifting weights",
+      "generated_answer": "Evan started lifting weights one year ago, which would be around 18 May 2022.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What advice did Evan give to Sam to avoid injuries while starting weightlifting?",
+      "ground_truth": "Find a trainer",
+      "generated_answer": "Evan advised Sam to start with good form and technique, find a trainer to help avoid injuries, and begin with something small while building strength.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Where did Sam and his mate plan to try kayaking?",
+      "ground_truth": "Lake Tahoe",
+      "generated_answer": "Sam and his mate planned to try kayaking on the lake, specifically while they were traveling through Lake Tahoe.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What digestive issue did Sam experience lately?",
+      "ground_truth": "Gastritis",
+      "generated_answer": "Sam experienced gastritis, which led to a severe stomachache and a visit to the ER last weekend, specifically on 14 October 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What adventurous theme is emerging in Evan's life as mentioned by Sam?",
+      "ground_truth": "helping lost tourists",
+      "generated_answer": "An adventurous theme emerging in Evan's life is his motivation for adventure on interesting hikes, as mentioned on 07 August 2023.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What does Evan mention about his progress at the gym to Sam?",
+      "ground_truth": "gaining strength",
+      "generated_answer": "Evan mentioned that he started lifting weights one year ago and has been seeing some gains, indicating that his progress at the gym has been a journey with struggles at first but improvements over time. He also emphasized that progress takes time and encouraged Sam to keep pushing.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Evan start his transformation journey two years ago?",
+      "ground_truth": "Changed his diet and started walking regularly",
+      "generated_answer": "Evan started his transformation journey two years ago by changing his diet and starting to walk regularly. He also focused more on his well-being rather than fixating on quick results, which made a significant difference.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What gift did Evan receive from a close friend?",
+      "ground_truth": "1968 Kustom K-200A vintage guitar",
+      "generated_answer": "Evan received a 1968 Kustom K-200A vintage guitar as a gift from a close friend.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Why had Evan been going through a tough time lately?",
+      "ground_truth": "Lost their job due to downsizing",
+      "generated_answer": "Evan had been going through a tough time lately due to several reasons: his son had a soccer accident on 12 August 2023, he twisted his knee on 25 August 2023, he lost his job in October 2023, and he experienced a health scare on 30 May 2023.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How does Evan describe the island he grew up on?",
+      "ground_truth": "A happy place",
+      "generated_answer": "Evan describes the island he grew up on as his \"happy place,\" a \"little slice of paradise\" where he feels \"peaceful and serene.\" He emphasizes that it shaped him and will always hold a special place in his heart.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was the main reason for Evan's frustration with his new Prius breaking down?",
+      "ground_truth": "He relied on it for his active lifestyle and road trips",
+      "generated_answer": "Evan's main frustration with his new Prius breaking down was that he relies on it for his active lifestyle and road trips, making the unexpected issue particularly stressful.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Sam suggest Evan view the setback with his broken Prius?",
+      "ground_truth": "As a chance to explore other ways of staying active and traveling",
+      "generated_answer": "Sam suggested that setbacks, like Evan's broken Prius, can lead to new opportunities, encouraging him to view the situation positively.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Sam suggest Evan try for stress relief and flexibility?",
+      "ground_truth": "Yoga",
+      "generated_answer": "Sam suggested that Evan try yoga for stress relief and flexibility, noting that it has done wonders for his own flexibility and stress levels.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Sam offer Evan regarding yoga?",
+      "ground_truth": "Support and tips",
+      "generated_answer": "Sam offered to provide Evan with yoga tips and expressed willingness to help him get started with yoga.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What news did Evan share with Sam on 9th December 2023?",
+      "ground_truth": "partner is pregnant",
+      "generated_answer": "On 9th December 2023, Evan shared that his partner is pregnant, expressing excitement about expanding their family and planning a big family reunion next summer.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What family event is Evan planning for next summer?",
+      "ground_truth": "big family reunion",
+      "generated_answer": "Evan is planning a big family reunion next summer.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What is the motto of Evan's family?",
+      "ground_truth": "'Bring it on Home'",
+      "generated_answer": "The motto of Evan's family is \"Bring it on Home,\" which emphasizes the importance of togetherness.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "According to Evan, what is important for Sam to believe in concerning his weight?",
+      "ground_truth": "Your worth is not defined by your weight",
+      "generated_answer": "According to Evan, it is important for Sam to believe in himself and to understand that his worth is not defined by his weight.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "Who helped Evan get the painting published in the exhibition?",
+      "ground_truth": "a close friend",
+      "generated_answer": "Evan's close friend helped him get the painting published in the exhibition.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Sam recently start enjoying to clear his head?",
+      "ground_truth": "running in the mornings",
+      "generated_answer": "Sam recently started enjoying running in the mornings as a way to clear his head.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Sam suggest Evan should do with his keys?",
+      "ground_truth": "put a GPS sensor on them",
+      "generated_answer": "Sam suggested that Evan should put a GPS sensor on his keys.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Evan feel when he painted the piece with the bird flying over it?",
+      "ground_truth": "a sense of joy and freedom",
+      "generated_answer": "Evan felt a sense of joy and freedom when he painted the piece with the bird flying over it, as he described the experience with spontaneous strokes and bold colors reflecting a playful and liberated mood.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
+      "ground_truth": "Keep trying new things",
+      "generated_answer": "Evan suggested that Sam should keep trying new things to find his own version of love.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "How did Evan describe the process of creating the painting with the bird flying over it?",
+      "ground_truth": "embracing the creative process without restraint",
+      "generated_answer": "Evan described the process of creating the painting with a sense of joy and freedom, using spontaneous strokes and bold colors to reflect a playful and liberated mood. He emphasized that art can portray feelings without words, capturing a mix of emotions like sadness, anger, and hope.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan want to share with his work friends?",
+      "ground_truth": "getting married",
+      "generated_answer": "Evan wanted to share the amazing news that his partner is pregnant.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Evan share with Sam after their hiking trip?",
+      "ground_truth": "a photo of a man standing on a rock looking out over a valley",
+      "generated_answer": "Evan shared that he just got back from a vacation in Canada with his new significant other, where they tried various activities including hiking and biking.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Evan offer to share with Sam after talking about healthy snacks?",
+      "ground_truth": "the recipes for cookies",
+      "generated_answer": "Evan offered to share some new healthy snacks he had been trying with Sam after discussing healthy meals.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What did Evan and his partner share with their extended family on January 5, 2024?",
+      "ground_truth": "their marriage",
+      "generated_answer": "Evan and his partner shared the news of their marriage with their extended family on January 5, 2024.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What was Evan limiting himself to on his new diet?",
+      "ground_truth": "just two ginger snaps a day",
+      "generated_answer": "Evan was limiting himself to just two ginger snaps a day on his new diet.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What sports activity did Evan and his partner try in a recent weekend?",
+      "ground_truth": "Snowshoeing",
+      "generated_answer": "Evan and his partner tried skiing on a recent weekend.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "What advice did Evan suggest Sam seek from a doctor?",
+      "ground_truth": "diet plan and low-impact exercises",
+      "generated_answer": "Evan suggested that Sam seek advice from a doctor regarding diet and exercise tips to help him stay healthy.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What suggestions did Evan give for low-impact exercises?",
+      "ground_truth": "swimming, yoga, walking",
+      "generated_answer": "Evan suggested swimming, yoga, and walking as good options for low-impact exercises. He also mentioned that going on beach sunsets can be a fun and calming way to exercise.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What movie did Sam watch that motivated him to keep up with his routine?",
+      "ground_truth": "The Godfather",
+      "generated_answer": "Sam watched *The Godfather* on the night of 17 May 2023, and it motivated him to keep up with his routine.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What activity helped Evan with stress and flexibility?",
+      "ground_truth": "Yoga",
+      "generated_answer": "Evan found that yoga helped him with stress and flexibility. He mentioned it as a great start alongside his diet.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    },
+    {
+      "question": "What did Evan share a photo of that was taken on a camping trip?",
+      "ground_truth": "a kayak",
+      "generated_answer": "Evan shared a photo of an amazing sunset taken on a camping trip last summer.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "Why did Evan apologize to his partner?",
+      "ground_truth": "for a drunken night",
+      "generated_answer": "Evan apologized to his partner because he had a pee accident near some roses, which he found embarrassing. He expressed that he was out of control and recognized the need to be more careful in the future.",
+      "category": 4,
+      "judge_label": "WRONG",
+      "judge_score": 0,
+      "judge_reasoning": "{\"label\":\"WRONG\"}"
+    },
+    {
+      "question": "How does Evan describe being out on the water while kayaking and watching the sunset?",
+      "ground_truth": "peaceful",
+      "generated_answer": "Evan describes being out on the water while kayaking and watching the sunset as a truly unforgettable experience that is peaceful and calming. He finds that watching the waves and sunset colors helps him find peace.",
+      "category": 4,
+      "judge_label": "CORRECT",
+      "judge_score": 1,
+      "judge_reasoning": "{\"label\":\"CORRECT\"}"
+    }
+  ],
+  "summary": {
+    "pipeline": "VAC Memory System v1",
+    "architecture": [
+      "1. Query Classification",
+      "2. LLM Synonym Expansion (qwen2.5:14b)",
+      "3. [TARGET] MCA-first filter",
+      "4. [TARGET] FAISS top-k (semantic, BGE-large 1024D)",
+      "5. [TARGET] BM25 top-k (sparse)",
+      "6. Union(MCA, FAISS, BM25) -> ~112 docs",
+      "7. [FIRE] Cross-Encoder DIRECT reranking (ALL ~112 docs -> top-15)",
+      "8. gpt-4o-mini answer (T=0.0, max_tokens=150)   MEM0 OFFICIAL!"
+    ],
+    "embedding_model": "bge-large-en-v1.5",
+    "embedding_dim": 1024
+  }
+}
