@@ -1,2 +1,2 @@
-EMBEDDING_MODEL = 'nomic-embed-text'
-EMBEDDING_DIM = 768
+EMBEDDING_MODEL = 'bge-large-en-v1.5'
+EMBEDDING_DIM = 1024
