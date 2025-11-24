@@ -1,26 +1,0 @@
-
-================================================================================
-🏛️  OFFICIAL GENEROUS GPT-4o-mini JUDGE (Mem0 methodology)
-================================================================================
-📁 File: /mnt/d/LoCoMo_SOTA_v4.64/results/baseline_100runs_20251120/v4.64_union_direct_ce_20251121_135011.json
-
-📊 Total questions: 239 (filtering Cat1-4 only: 191)
-
-🔄 Judging (GENEROUS):   0%|          | 0/191 [00:00<?, ?q/s]🔄 Judging (GENEROUS):   1%|          | 1/191 [00:02<08:31,  2.69s/q]🔄 Judging (GENEROUS):   1%|          | 2/191 [00:15<27:14,  8.65s/q]🔄 Judging (GENEROUS):   2%|▏         | 3/191 [00:15<15:15,  4.87s/q]🔄 Judging (GENEROUS):   2%|▏         | 4/191 [00:16<09:43,  3.12s/q]🔄 Judging (GENEROUS):   2%|▏         | 4/191 [00:39<30:54,  9.92s/q]
-Traceback (most recent call last):
-  File "/mnt/d/LoCoMo_SOTA_v4.64/eval_v4.26_official_generous_judge.py", line 248, in <module>
-    evaluate_results(results_file)
-  File "/mnt/d/LoCoMo_SOTA_v4.64/eval_v4.26_official_generous_judge.py", line 156, in evaluate_results
-    judge_result = call_gpt4_judge(question, ground_truth, generated_answer)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/d/LoCoMo_SOTA_v4.64/eval_v4.26_official_generous_judge.py", line 123, in call_gpt4_judge
-    raise last_err if last_err else RuntimeError("Judge call failed")
-RuntimeError: OpenAI API error: 429, {
-    "error": {
-        "message": "Rate limit reached for gpt-4o-mini in organization org-QitS4fGkZ8bh60xnmQRfBZDb on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.",
-        "type": "requests",
-        "param": null,
-        "code": "rate_limit_exceeded"
-    }
-}
-
