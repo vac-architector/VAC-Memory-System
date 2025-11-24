@@ -4,9 +4,7 @@
 
 **From Cell Tower Climber to SOTA AI Memory in 4.5 Months**
 
-[![SOTA](https://img.shields.io/badge/🏆_SOTA-84%25_LoCoMo-gold?style=for-the-badge)](https://github.com/vac-architector/VAC-Memory-System#benchmark)
-[![Beats](https://img.shields.io/badge/Beats_Zep-+8.86%25-green?style=for-the-badge)](https://github.com/vac-architector/VAC-Memory-System#benchmark)
-[![Crushes](https://img.shields.io/badge/Crushes_Mem0-+17.1%25-red?style=for-the-badge)](https://github.com/vac-architector/VAC-Memory-System#benchmark)
+[![SOTA](https://img.shields.io/badge/🏆_SOTA-80%25_LoCoMo-gold?style=for-the-badge)](https://github.com/vac-architector/VAC-Memory-System#benchmark)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-yellow.svg?style=flat-square)](https://www.python.org/)
@@ -156,7 +154,6 @@ cat results/*_generous_judged.json | grep "accuracy"
 VAC-Memory-System/
 ├── 🧠 Core/                    # Compiled pipeline (.so) + judge
 ├── 💾 data/                    # SQLite + FAISS indexes (ready to use)
-├── 🤖 models/                  # BGE-large-en-v1.5 (7.5GB)
 ├── 📊 baseline_100 result/     # 100 verified benchmark runs
 ├── 📈 results/                 # Your test outputs go here
 ├── 🏃 run_test.sh/bat         # One-click testing
@@ -221,7 +218,7 @@ Cross-Encoder: bge-reranker-v2-m3 (278M params)
 
 ### Contact
 
-**Viktor Binakov** - The cell tower climber who became an AI architect
+**Viktor Kuznetsov** - The cell tower climber who became an AI architect
 
 📧 **Email:** Vkuz02452@gmail.com | ViktorAdamCore@pm.me
 🐦 **Twitter:** [@vac_architector](https://twitter.com/vac_architector)
