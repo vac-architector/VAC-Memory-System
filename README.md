@@ -109,7 +109,7 @@ Ten months ago I was hanging off cell towers in Chicago, then moved to Columbus 
 One night I asked an AI: “How hard is it to build a bot that answers my customers?”  
 It said “hard, but possible” and gave me the first lines of code.
 
-That spark turned into obsession. Days and nights blurred. My girlfriend was angry — no money coming in, just me glued to the screen. Friends thought I was crazy: zero IT background, no degree, competing with Silicon Valley labs.
+That spark turned into obsession. Days and nights blurred. Friends thought I was crazy: zero IT background, no degree, competing with Silicon Valley labs.
 
 I fought hallucinations with thousands of tests. I learned to distrust even the strongest models and built my own verification loops. Four and a half months later — using nothing but Claude in the terminal and pure grit — the system you’re looking at now crushed every published score on LoCoMo.
 
