@@ -1,4 +1,4 @@
-# LoCoMo V4.64 Baseline — Full 100/100 Results
+# LoCoMo VAC Memory System V1.0 Baseline — Full 100/100 Results
 
 Generated: 2025-11-21 23:23:00
 Total Runs: 100
