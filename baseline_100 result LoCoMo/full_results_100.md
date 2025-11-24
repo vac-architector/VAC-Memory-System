@@ -1,4 +1,4 @@
-# LoCoMo V4.64 — Full Results (100/100)
+# LoCoMo VAC  Memory System V1.0 — Full Results (100/100)
 
 Evaluation: Cat1–4, GENEROUS judge, temperature=0.0
 
