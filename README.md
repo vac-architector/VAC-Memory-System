@@ -27,7 +27,7 @@ No CS degree. No programming background. Just a handyman with a dream and Claude
 
 - **Started:** Zero coding knowledge, installing closets on TaskRabbit
 - **Weapon:** RTX 4090 bought on installments + pure obsession
-- **Result:** SOTA 84% on LoCoMo (Zep: 75.14%, Mem0: 66.9%)
+- **Result:** SOTA 80% on LoCoMo 
 - **Time:** 4.5 months of 18-hour days
 
 This repository isn't just code. It's proof that **impossible is a starting point**.
@@ -43,9 +43,7 @@ This repository isn't just code. It's proof that **impossible is a starting poin
 
 | System | Accuracy | Status |
 |:------:|:--------:|:------:|
-| **VAC v1.0** | **84.0%** | **👑 NEW SOTA** |
-| Zep | 75.14% | Defeated +8.86% |
-| Mem0 | 66.9% | Crushed +17.1% |
+| **VAC v1.0** | **80.0%** | **👑 NEW SOTA** |
 
 </div>
 
