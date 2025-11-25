@@ -1,7 +1,7 @@
 """
 🏛️ OFFICIAL GENEROUS GPT-4O-MINI JUDGE EVALUATION (Mem0 LoCoMo methodology)
 
-Оценивает V4.26 results используя ОФИЦИАЛЬНЫЙ generous prompt из Mem0.
+Оценивает V1.0 results используя ОФИЦИАЛЬНЫЙ generous prompt из Mem0.
 
 Источник: https://github.com/mem0ai/mem0/blob/main/evaluation/metrics/llm_judge.py
 
