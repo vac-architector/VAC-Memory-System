@@ -342,8 +342,7 @@ Welcome to the age of AI orchestrators.
 
 ---
 
-*Viktor Binakov*
+*Viktor Kuznetsov*
 *Former cell tower climber, current AI orchestrator*
 *First person to achieve SOTA without writing code*
 
-*P.S. - Yes, Claude helped write this. That's the entire point.*
