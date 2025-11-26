@@ -1,3 +1,7 @@
+<div align="center">
+<img src="assets/vac-logo-white.png" alt="VAC Logo" width="300"/>
+</div>
+
 # They Say AI Will Replace Programmers. I Think AI Will Mass-Produce Them Instead.
 
 *Or: How I went from climbing cell towers to beating Silicon Valley's memory systems in 135 days without writing a single line of code*

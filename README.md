@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="assets/vac-logo-white.png" alt="VAC Logo" width="400"/>
+
 **From Cell Tower Climber to SOTA AI Memory in 4.5 Months**
 
 [![SOTA](https://img.shields.io/badge/🏆_SOTA-80%25_LoCoMo-gold?style=for-the-badge)](https://github.com/vac-architector/VAC-Memory-System#benchmark)
