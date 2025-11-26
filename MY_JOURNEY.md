@@ -243,11 +243,11 @@ Claude had forgotten to normalize vectors. One week. One line. But when it final
 ## The Evolution
 
 ```
-v4.10: 45% accuracy - "This is garbage"
-v4.15: 55% - "Something's happening..."
-v4.20: 70% - "HOLY SHIT"
-v4.35: 90% - "We did it"
-v4.64: 80.1% on full LoCoMo - "WE BEAT EVERYONE"
+v4.10: 45% accuracy - "This is garbage" - 20 q/a
+v4.15: 55% - "Something's happening..." - 20q/a
+v4.20: 70% - "HOLY SHIT" - 20 q/a
+v4.35: 90% - "We did it" - 20 q/a
+v4.64: 80.1% on full LoCoMo - 1580q/a - Cat1-4 "WE BEAT EVERYONE"
 ```
 
 I'll never forget November 15th, 3:47 AM:
