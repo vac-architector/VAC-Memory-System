@@ -3,16 +3,20 @@ The Problem With Vector Search
 Vector databases (FAISS, Pinecone) excel at finding semantically similar content. But they have a critical blind spot: they return documents that are semantically close but factually wrong.
 Example:
 
-Query: "Where did I meet Alice?"
-FAISS returns: "I met Bob at the coffee shop" (high cosine similarity—same structure, location mention)
-Problem: The query asks about Alice, not Bob. FAISS matched the pattern but missed the entity.
+* Query: "Where did I meet Alice?"
+
+* FAISS returns: "I met Bob at the coffee shop" (high cosine similarity—same structure, location mention)
+
+* Problem: The query asks about Alice, not Bob. FAISS matched the pattern but missed the entity.
 
 BM25 catches "Alice" via exact match, but misses paraphrasing ("encountered Alice", "ran into her").
-
 MCA: A Pre-Filter That Stops False Positives
 Multi-Candidate Assessment (MCA) is a gate that runs before expensive vector search. Instead of semantic matching, it asks a simpler question: "How many of the query's key terms appear in this memory?"
 The core algorithm:
-pythondef calculate_query_coverage(query_keywords: set, memory_keywords: set) -> float:
+python
+
+```python
+def calculate_query_coverage(query_keywords: set, memory_keywords: set) -> float:
     if not query_keywords:
         return 0.0
     intersection = len(query_keywords & memory_keywords)
@@ -29,8 +33,13 @@ for memory in all_memories:
         continue  # Skip—don't waste FAISS compute
     
     candidates.append(memory)
+```
+
 The physics-inspired ranking (from the codebase):
-pythondistance = max(DELTA, 1.0 - coverage)
+python
+
+```python
+distance = max(DELTA, 1.0 - coverage)
 mass = coverage * importance_weight
 force = G * (query_mass * memory_mass) / (distance ** 2 + DELTA)
 ```
@@ -77,30 +86,41 @@ Query: "Where did I meet Alice?"
     120 → 15 best
          ↓
 [7] LLM Answer (gpt-4o-mini, T=0.0)
+````
+
 Why this order matters:
 
-MCA alone misses paraphrasing ("Alice" vs "her")
-FAISS alone returns wrong entities with right patterns
-BM25 alone misses semantic variations
-Cross-encoder is expensive—run it on filtered candidates, not everything
+* MCA alone misses paraphrasing ("Alice" vs "her")
 
+* FAISS alone returns wrong entities with right patterns
+
+* BM25 alone misses semantic variations
+
+* Cross-encoder is expensive—run it on filtered candidates, not everything
 
 MCA vs BM25 vs Vector Search
-AspectBM25Vector (FAISS)MCAMeasuresTF-IDF term importanceCosine similarityEntity coverageParaphrasing❌✅❌Entity preservation✅❌✅SpeedFastMedium (GPU)Very fastSolo accuracy~50%~65-70%~40%Role in pipelineKeyword backupSemantic understandingPre-filter gate
-MCA isn't meant to replace anything. It's a gate that reduces the candidate pool before expensive operations.
 
+```
+AspectBM25Vector (FAISS)MCAMeasuresTF-IDF term importanceCosine similarityEntity coverageParaphrasing❌✅❌Entity preservation✅❌✅SpeedFastMedium (GPU)Very fastSolo accuracy~50%~65-70%~40%Role in pipelineKeyword backupSemantic understandingPre-filter gate
+```
+
+MCA isn't meant to replace anything. It's a gate that reduces the candidate pool before expensive operations.
 Why Not Just Use MCA?
 MCA alone scores ~40-50% because:
 
-Typos/variations: Query "Alice", memory has "Alicia" → coverage=0 → skipped
-Pronouns: "Where did I meet her?" → no direct entity match
-Paraphrasing: "encountered" vs "met" needs embeddings
+1. Typos/variations: Query "Alice", memory has "Alicia" → coverage=0 → skipped
+
+2. Pronouns: "Where did I meet her?" → no direct entity match
+
+3. Paraphrasing: "encountered" vs "met" needs embeddings
 
 MCA is a filter, not a retriever.
-
 Implementation Details
 From the actual codebase—the stopword list matters:
-pythonstopwords = {
+python
+
+```python
+stopwords = {
     'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been',
     'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will',
     'would', 'could', 'should', 'what', 'when', 'where', 'who',
@@ -117,4 +137,9 @@ def extract_keywords_simple(text: str) -> set:
         if len(cleaned) >= 3 and cleaned not in stopwords:
             keywords.add(cleaned)
     return keywords
+```
+
 The threshold (0.1) is tuned—too high filters good candidates, too low lets noise through.
+ 
+ 
+сделай мне md документ этого поста пожалуйста, что бы я мог скачать
