@@ -92,9 +92,9 @@ flowchart LR
   python mca_lite.py          # ~40 lines: keyword matching
   python pipeline_lite.py     # ~250 lines: 4-step pipeline
 
-  LITE achieves 65-70% accuracy and shows the core concepts.
+  LITE achieves shows the core concepts.
 
-  FULL Version - Use Production Code
+  FULL Version - Use Production Code on LoCoMo benchmark test
 
   # Pre-compiled optimized binaries (Core/*.so)
   ./run_test.sh               # Linux/Mac
@@ -105,15 +105,6 @@ flowchart LR
   - BM25 lexical search
   - Cross-encoder reranking
   - Query expansion
-
-  Comparison
-
-  |          | LITE                 | FULL                 |
-  |----------|----------------------|----------------------|
-  | Code     | ✅ Open Python        | ⚙️ Compiled .so      |
-  | Accuracy | 65-70%               | 80.1%                |
-  | Learning | ✅ Easy to understand | Production optimized |
-  | Use case | Study, prototype     | Deploy, production   |
 
 ---
 
@@ -265,10 +256,7 @@ Cross-Encoder: bge-reranker-v2-m3 (278M params)
 
 - [x] Beat SOTA on LoCoMo ✅
 - [x] Open source release ✅
-- [ ] Multi-language support (Q1 2025)
-- [ ] 1M+ token context window (Q2 2025)
-- [ ] Real-time streaming (Q3 2025)
-- [ ] Graph-based reasoning (Q4 2025)
+
 
 ---
 
