@@ -256,7 +256,7 @@ Cross-Encoder: bge-reranker-v2-m3 (278M params)
 
 - [x] Beat SOTA on LoCoMo ✅
 - [x] Open source release ✅
-
+- [ ] Open SaaS
 
 ---
 
