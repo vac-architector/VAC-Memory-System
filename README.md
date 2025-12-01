@@ -39,9 +39,17 @@ This repository isn't just code. It's proof that **impossible is a starting poin
 ### **Official LoCoMo 2025 Benchmark Results**
 *100 test runs with GPT-4o-mini generous judge*
 
-| System | Accuracy | Status |
-|:------:|:--------:|:------:|
-| **VAC v1.0** | **80.0%** | **👑 NEW SOTA** |
+  ## 🏆 LoCoMo Benchmark Leaderboard - GPT-4o-mini (2025)
+
+  | Rank | System | Accuracy | Notes |
+  |------|--------|----------|-------|
+  | 🥇 | **MemMachine** | **84.87%** | Single-hop: 93.3%, Multi-hop: 80.5%, Temporal: 72.6% |
+  | 🥈 | **VAC Memory System** | **80.1%** | 100 validated runs, MCA + FAISS + BM25 + Cross-encoder |
+  | 🥉 | **Letta (MemGPT)** | **74.0%** | File-based with semantic search |
+  | 4️⃣ | **Mem0** (Graph variant) | **68.5%** | +26% vs OpenAI baseline |
+  | 5️⃣ | **Memobase** | **75.78%** | - |
+  | 6️⃣ | **Zep** | **75.14%** | - |
+  | 7️⃣ | **Mem0** (default) | **66.88%** | Standard variant |
 
 </div>
 
