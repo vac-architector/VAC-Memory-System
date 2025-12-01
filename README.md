@@ -21,8 +21,6 @@
 
 ## 📖 The Impossible Story
 
-> *"Ten months ago I was hanging off cell towers in Chicago. Today, my system beats every published memory system on Earth."*
-
 No CS degree. No programming background. Just a handyman with a dream and Claude in the terminal.
 
 - **Started:** Zero coding knowledge, installing closets on TaskRabbit
