@@ -102,7 +102,15 @@ Why this order matters:
 MCA vs BM25 vs Vector Search
 
 ```
-AspectBM25Vector (FAISS)MCAMeasuresTF-IDF term importanceCosine similarityEntity coverageParaphrasing❌✅❌Entity preservation✅❌✅SpeedFastMedium (GPU)Very fastSolo accuracy~50%~65-70%~40%Role in pipelineKeyword backupSemantic understandingPre-filter gate
+| Aspect              | BM25                   | Vector (FAISS)         | MCA             |
+| ------------------- | ---------------------- | ---------------------- | --------------- |
+| Measures            | TF-IDF term importance | Cosine similarity      | Entity coverage |
+| Paraphrasing        | ❌                      | ✅                      | ❌               |
+| Entity preservation | ✅                      | ❌                      | ✅               |
+| Speed               | Fast                   | Medium (GPU)           | Very fast       |
+| Solo accuracy       | ~50%                   | ~65–70%                | ~40%            |
+| Role in pipeline    | Keyword backup         | Semantic understanding | Pre-filter gate |
+
 ```
 
 MCA isn't meant to replace anything. It's a gate that reduces the candidate pool before expensive operations.
@@ -142,6 +150,5 @@ def extract_keywords_simple(text: str) -> set:
 
 The threshold (0.1) is tuned—too high filters good candidates, too low lets noise through.
  
- 
-сделай мне md документ этого поста пожалуйста, что бы я мог скачать
+
 
