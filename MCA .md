@@ -16,7 +16,6 @@ Multi-Candidate Assessment (MCA) is a gate that runs before expensive vector sea
 
 The core algorithm:
 
-python
 
 ```python
 def calculate_query_coverage(query_keywords: set, memory_keywords: set) -> float:
@@ -152,6 +151,7 @@ def extract_keywords_simple(text: str) -> set:
 
 The threshold (0.1) is tuned—too high filters good candidates, too low lets noise through.
  
+
 
 
 
