@@ -84,6 +84,38 @@ flowchart LR
     style G fill:#f3e5f5
     style I fill:#e8f5e9
 ```
+ ## 🎓 Two Versions: LITE (Open Source) vs FULL (Compiled)
+
+  ### LITE Version - Learn the Architecture
+  ```bash
+  # Open source Python implementation - understand how VAC works
+  python mca_lite.py          # ~40 lines: keyword matching
+  python pipeline_lite.py     # ~250 lines: 4-step pipeline
+
+  LITE achieves 65-70% accuracy and shows the core concepts.
+
+  FULL Version - Use Production Code
+
+  # Pre-compiled optimized binaries (Core/*.so)
+  ./run_test.sh               # Linux/Mac
+  run_test.bat                # Windows
+
+  FULL achieves 80.1% accuracy with all optimizations:
+  - Advanced MCA (NER + date parsing)
+  - BM25 lexical search
+  - Cross-encoder reranking
+  - Query expansion
+
+  Comparison
+
+  |          | LITE                 | FULL                 |
+  |----------|----------------------|----------------------|
+  | Code     | ✅ Open Python        | ⚙️ Compiled .so      |
+  | Accuracy | 65-70%               | 80.1%                |
+  | Learning | ✅ Easy to understand | Production optimized |
+  | Use case | Study, prototype     | Deploy, production   |
+
+---
 
 ### 🎯 The Secret Sauce
 
