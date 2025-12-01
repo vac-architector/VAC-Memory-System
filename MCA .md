@@ -13,7 +13,9 @@ Example:
 BM25 catches "Alice" via exact match, but misses paraphrasing ("encountered Alice", "ran into her").
 MCA: A Pre-Filter That Stops False Positives
 Multi-Candidate Assessment (MCA) is a gate that runs before expensive vector search. Instead of semantic matching, it asks a simpler question: "How many of the query's key terms appear in this memory?"
+
 The core algorithm:
+
 python
 
 ```python
@@ -150,5 +152,6 @@ def extract_keywords_simple(text: str) -> set:
 
 The threshold (0.1) is tuned—too high filters good candidates, too low lets noise through.
  
+
 
 
