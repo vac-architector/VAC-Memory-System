@@ -1,4 +1,5 @@
 MCA: Entity Coverage as a Memory Retrieval Gate
+
 The Problem With Vector Search
 Vector databases (FAISS, Pinecone) excel at finding semantically similar content. But they have a critical blind spot: they return documents that are semantically close but factually wrong.
 Example:
@@ -143,3 +144,4 @@ The threshold (0.1) is tuned—too high filters good candidates, too low lets no
  
  
 сделай мне md документ этого поста пожалуйста, что бы я мог скачать
+
