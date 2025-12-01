@@ -38,7 +38,6 @@ for memory in all_memories:
 ```
 
 The physics-inspired ranking (from the codebase):
-python
 
 ```python
 distance = max(DELTA, 1.0 - coverage)
@@ -151,6 +150,7 @@ def extract_keywords_simple(text: str) -> set:
 
 The threshold (0.1) is tuned—too high filters good candidates, too low lets noise through.
  
+
 
 
 
