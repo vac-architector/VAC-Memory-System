@@ -253,7 +253,7 @@ Cross-Encoder: bge-reranker-v2-m3 (278M params)
 
 📧 **Email:** Vkuz02452@gmail.com | ViktorAdamCore@pm.me
 🐦 **Twitter:** [@vac_architector](https://twitter.com/vac_architector)
-💼 **LinkedIn:** [Viktor Binakov](https://linkedin.com/in/viktor-binakov)
+💼 **LinkedIn:** [Viktor Kuznetsov](https://linkedin.com/in/viktor-binakov)
 💬 **Discord:** VAC Memory Community (coming soon)
 
 ---
